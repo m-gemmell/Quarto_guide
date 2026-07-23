@@ -4,7 +4,7 @@
     "href": "setup/setup.html",
     "title": "Setup",
     "section": "",
-    "text": "To use quarto I would suggest using VScode (You can “Disable Ai Features” in the settings).\nTo install Quarto see The Quarto Get Started page.\n\n\nFor this site you will also want to follow the below install instruction.\n\n\nR in Visual Studio Code\n\n\n\nCode Spell Checker: Useful for spell checking normal words\nWhen using this click on a misspelt word (signified by squiggly underlining) and press “ctrl+.” to get a dropdown of suggestions\nTo change to GB spelling:\n1. Go to \"Extension\" on VScode (On far left, icon is three squares and a diamond)\n2. Click on the gear icon for Code Spell Checker\n3. Click on \"Settings\"\n4. Change \"C Spell: Language\" to \"en-GB\"",
+    "text": "To use quarto I would suggest using VScode (You can “Disable Ai Features” in the settings).\nTo install Quarto see The Quarto Get Started page.\n\n\nFor this site you will also want to follow the below install instruction.\n\n\nR in Visual Studio Code\n\n\n\nCode Spell Checker: Useful for spell checking normal words\nWhen using this click on a misspelt word (signified by squiggly underlining) and press “ctrl+.” to get a dropdown of suggestions\nTo change to GB spelling:\n\nGo to “Extension” on VScode (On far left, icon is three squares and a diamond)\nClick on the gear icon for Code Spell Checker\nClick on “Settings”\nChange “C Spell: Language” to “en-GB”\n\n\n\n\n\nYou can create a quarto project in 2 different way, a quarto command or copying a template.\n\n\nIn the command palette in VScode (the text bar at the top middle) type in the following:\n&gt;Quarto: Create Project\nFurther instructions are here: Quarto Website Quick Start\n\n\n\nOptionally, you can copy a template or other project from github and edit it.\nIf you already have the files you can then copy and paste to a new directory (ensure you don’t copy over any git files/directories if you do this).\nTo download all the files of a gihub repo:\n\nNavigate to the page via a browser (e.g. https://github.com/m-gemmell/Quarto_guide)\nClick on the green &lt;&gt; Code button\nSelect “Download ZIP”",
     "crumbs": [
       "Setup"
     ]
@@ -14,7 +14,7 @@
     "href": "setup/setup.html#extensions",
     "title": "Setup",
     "section": "",
-    "text": "For this site you will also want to follow the below install instruction.\n\n\nR in Visual Studio Code\n\n\n\nCode Spell Checker: Useful for spell checking normal words\nWhen using this click on a misspelt word (signified by squiggly underlining) and press “ctrl+.” to get a dropdown of suggestions\nTo change to GB spelling:\n1. Go to \"Extension\" on VScode (On far left, icon is three squares and a diamond)\n2. Click on the gear icon for Code Spell Checker\n3. Click on \"Settings\"\n4. Change \"C Spell: Language\" to \"en-GB\"",
+    "text": "For this site you will also want to follow the below install instruction.\n\n\nR in Visual Studio Code\n\n\n\nCode Spell Checker: Useful for spell checking normal words\nWhen using this click on a misspelt word (signified by squiggly underlining) and press “ctrl+.” to get a dropdown of suggestions\nTo change to GB spelling:\n\nGo to “Extension” on VScode (On far left, icon is three squares and a diamond)\nClick on the gear icon for Code Spell Checker\nClick on “Settings”\nChange “C Spell: Language” to “en-GB”",
     "crumbs": [
       "Setup"
     ]
@@ -45,7 +45,7 @@
     "href": "index.html",
     "title": "Overview",
     "section": "",
-    "text": "The following website contains a quick guide/cookbook for creating websites with quarto. Please see Quarto’s official Get Started page if you are beginning with quarto.",
+    "text": "The following website contains a quick guide/cookbook for creating websites with quarto.",
     "crumbs": [
       "Overview"
     ]
@@ -91,13 +91,272 @@
     "href": "yml/yml.html",
     "title": "yml",
     "section": "",
-    "text": "yml\nThe file _quarto.yml determines the overall structure of the quarto website. It includes the following parts:"
+    "text": "The file _quarto.yml determines the overall structure of the quarto website. It includes various segments.\n\n\n\nProject: Determines what kind of project you create\n\nThis website focusses on creating a website project but you can also create books, manuscripts, and presentations with quarto\n\nWebsite: General website and options and the structure of the website\n\n\n\n\nOne note is that indentation is vital in the file. Everything must be indented to to correct amount or creating the site will fail.\nAn example can be see in the following link containing the _quarto.yml file for this website.\nThe websites _quarto.yml on github\n\n\n\nAs we are creating a website we will include a website section.\nThis contains a lot of sub segments so please see the",
+    "crumbs": [
+      "yml"
+    ]
   },
   {
     "objectID": "yml/yml.html#the-project-type",
     "href": "yml/yml.html#the-project-type",
     "title": "yml",
     "section": "",
-    "text": "The project information: The type of project"
+    "text": "The type of project (i.e. is it a website, book, etc.)\nFor a normal quarto website you can have the following.\n\nproject:\n  type: website\n\n\n\n\n\n\n\nTip\n\n\n\nNote that the top line of a segment (i.e. project:) has no indentation. Then all lines in that segment have at least one level of indentations (e.g. type:website has one level).\n\n\nYou can also create:\n\nBooks\nManuscripts\nPresentations\n\nThere are also other Project options than just type:. For example you can set the output director with output-dir:."
+  },
+  {
+    "objectID": "yml/project.html",
+    "href": "yml/project.html",
+    "title": "Project",
+    "section": "",
+    "text": "Project\nThe type of project (i.e. is it a website, book, etc.)\nFor a normal quarto website you can have the following.\n\nproject:\n  type: website\n\n\n\n\n\n\n\nTip\n\n\n\nNote that the top line of a segment (i.e. project:) has no indentation. Then all lines in that segment have at least one level of indentations (e.g. type:website has one level).\n\n\nYou can also create:\n\nBooks\nManuscripts\nPresentations\n\nThere are also other Project options than just type:. For example you can set the output director with output-dir:."
+  },
+  {
+    "objectID": "qmds/code.html",
+    "href": "qmds/code.html",
+    "title": "Code",
+    "section": "",
+    "text": "You can include bash and python code.\nIf you in do you will unfrintunately need the below code at the top of each .qmd page that contains non R code. You need this even if you set eval=FALSE.\n\n---\nengine: knitr\n---",
+    "crumbs": [
+      "qmd",
+      "Interactivity",
+      "Code"
+    ]
+  },
+  {
+    "objectID": "qmds/code.html#non-r-code",
+    "href": "qmds/code.html#non-r-code",
+    "title": "Code",
+    "section": "",
+    "text": "You can include bash and python code.\nIf you in do you will unfrintunately need the below code at the top of each .qmd page that contains non R code. You need this even if you set eval=FALSE.\n\n---\nengine: knitr\n---",
+    "crumbs": [
+      "qmd",
+      "Interactivity",
+      "Code"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html",
+    "href": "qmds/callouts.html",
+    "title": "Callouts",
+    "section": "",
+    "text": "Callout out boxes are a nice way to signpost something. The below shows the callout boxes and the code that is included in the .qmd file to create them.\nThere are four types.\n\nNote\nWarning\nImportant\nCaution\n\nYou can also include titles or make them collapsible.\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis is a note.\n\n\nCode:\n\n::: {.callout-note}\nThis is a note.\n:::\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nSmoking leads to coughing\n\n\nCode:\n\n::: {.callout-warning}\nSmoking leads to coughing\n:::\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to breath when stretching\n\n\nCode:\n\n::: {.callout-important}\nRemember to breath when stretching\n:::\n\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nDon’t get stuck in the circular loop of the next callout block\n\n\nCode:\n\n::: {.callout-caution}\nDon't get stuck in the circular loops of the next callout blocks\n:::\n\n\n\n\nYou can specify the title of a callout block.\n\n\n\n\n\n\nNoteRead the note below\n\n\n\nRead the title above\n\n\nCode:\n\n::: {.callout-note title=\"Read the note below\"}\nRead the title above\n:::\n\n\n\n\nYou can make a callout block collapsible.\nSet collapse=\"false\" to make the block collapsible but not collapsed by default.\n\n\n\n\n\n\nWarning\n\n\n\n\n\nHunger leads to eating\n\n\n\n\n::: {.callout-warning collapse=\"false}\nHunger leads to eating\n:::\n\nSet collapse=\"TRUE\" to make the collapsible block collapsed by default. Of course you can also add a title.\n\n\n\n\n\n\nImportantExpand this collapsible block\n\n\n\n\n\nCollapse this expanded block\n\n\n\n\n::: {.callout-important collapse=\"true\" title=\"Expand this collapsible block\"}\nCollapse this expanded block\n:::",
+    "crumbs": [
+      "qmd",
+      "Callouts"
+    ]
+  },
+  {
+    "objectID": "yml/yml.html#website",
+    "href": "yml/yml.html#website",
+    "title": "yml",
+    "section": "",
+    "text": "As we are creating a website we will include a website section.\nThis contains a lot of sub segments so please see the",
+    "crumbs": [
+      "yml"
+    ]
+  },
+  {
+    "objectID": "yml/yml.html#segments",
+    "href": "yml/yml.html#segments",
+    "title": "yml",
+    "section": "",
+    "text": "Project: Determines what kind of project you create\n\nThis website focusses on creating a website project but you can also create books, manuscripts, and presentations with quarto\n\nWebsite: General website and options and the structure of the website",
+    "crumbs": [
+      "yml"
+    ]
+  },
+  {
+    "objectID": "yml/yml.html#indentation",
+    "href": "yml/yml.html#indentation",
+    "title": "yml",
+    "section": "",
+    "text": "One note is that indentation is vital in the file. Everything must be indented to to correct amount or creating the site will fail.\nAn example can be see in the following link containing the _quarto.yml file for this website.\nThe websites _quarto.yml on github",
+    "crumbs": [
+      "yml"
+    ]
+  },
+  {
+    "objectID": "yml/website.html",
+    "href": "yml/website.html",
+    "title": "Website",
+    "section": "",
+    "text": "Website",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Website"
+    ]
+  },
+  {
+    "objectID": "yml/website_options.html",
+    "href": "yml/website_options.html",
+    "title": "Website options",
+    "section": "",
+    "text": "Website options",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Website options"
+    ]
+  },
+  {
+    "objectID": "yml/page_footer.html",
+    "href": "yml/page_footer.html",
+    "title": "Page footer",
+    "section": "",
+    "text": "Page footer",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Page footer"
+    ]
+  },
+  {
+    "objectID": "yml/format.html",
+    "href": "yml/format.html",
+    "title": "Format",
+    "section": "",
+    "text": "Format"
+  },
+  {
+    "objectID": "yml/navbar.html",
+    "href": "yml/navbar.html",
+    "title": "Navbar",
+    "section": "",
+    "text": "Navbar",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Navbar"
+    ]
+  },
+  {
+    "objectID": "yml/sidebar.html",
+    "href": "yml/sidebar.html",
+    "title": "Sidebar",
+    "section": "",
+    "text": "Sidebar",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Sidebar"
+    ]
+  },
+  {
+    "objectID": "index.html#authoring-a-website",
+    "href": "index.html#authoring-a-website",
+    "title": "Overview",
+    "section": "Authoring a website",
+    "text": "Authoring a website\nOnce you have created your various quarto files you can create your website’s html files with the following command in bash.\n\nquarto preview\n\n\n\n\n\n\n\nNote\n\n\n\nEnsue you are in the main directory of your quarto project when running the above.\n\n\nYou can host your html files through various means. I use the free service GitHub pages.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#further-resources",
+    "href": "index.html#further-resources",
+    "title": "Overview",
+    "section": "Further resources",
+    "text": "Further resources\nOther resources include:\n\nMain Quarto website\nQuarto: The practical Guide",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#creating-quarto-files",
+    "href": "index.html#creating-quarto-files",
+    "title": "Overview",
+    "section": "Creating quarto files",
+    "text": "Creating quarto files\nThe various parts, sections, and pages of this website provide a quick guide and resources for creating a quarto website. These include:\n\nSetup: Setting up quarto, VScode, and a quarto website project\nqmd: Writing .qmd files with markdown\ncss: Setting the website theme, and the text font & colour\n\nThis shows the use of .scss files (Sass: Syntactically Awesome Style Sheets)\n\nyml: Setting the format, structure, and other global options for the website",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "setup/setup.html#create-quarto-website-project",
+    "href": "setup/setup.html#create-quarto-website-project",
+    "title": "Setup",
+    "section": "",
+    "text": "You can create a quarto project in 2 different way, a quarto command or copying a template.\n\n\nIn the command palette in VScode (the text bar at the top middle) type in the following:\n&gt;Quarto: Create Project\nFurther instructions are here: Quarto Website Quick Start\n\n\n\nOptionally, you can copy a template or other project from github and edit it.\nIf you already have the files you can then copy and paste to a new directory (ensure you don’t copy over any git files/directories if you do this).\nTo download all the files of a gihub repo:\n\nNavigate to the page via a browser (e.g. https://github.com/m-gemmell/Quarto_guide)\nClick on the green &lt;&gt; Code button\nSelect “Download ZIP”",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html#note",
+    "href": "qmds/callouts.html#note",
+    "title": "Callouts",
+    "section": "",
+    "text": "Note\n\n\n\nThis is a note.\n\n\nCode:\n\n::: {.callout-note}\nThis is a note.\n:::",
+    "crumbs": [
+      "qmd",
+      "Callouts"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html#warning",
+    "href": "qmds/callouts.html#warning",
+    "title": "Callouts",
+    "section": "",
+    "text": "Warning\n\n\n\nSmoking leads to coughing\n\n\nCode:\n\n::: {.callout-warning}\nSmoking leads to coughing\n:::",
+    "crumbs": [
+      "qmd",
+      "Callouts"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html#important",
+    "href": "qmds/callouts.html#important",
+    "title": "Callouts",
+    "section": "",
+    "text": "Important\n\n\n\nRemember to breath when stretching\n\n\nCode:\n\n::: {.callout-important}\nRemember to breath when stretching\n:::",
+    "crumbs": [
+      "qmd",
+      "Callouts"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html#caution",
+    "href": "qmds/callouts.html#caution",
+    "title": "Callouts",
+    "section": "",
+    "text": "Caution\n\n\n\nDon’t get stuck in the circular loop of the next callout block\n\n\nCode:\n\n::: {.callout-caution}\nDon't get stuck in the circular loops of the next callout blocks\n:::",
+    "crumbs": [
+      "qmd",
+      "Callouts"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html#title",
+    "href": "qmds/callouts.html#title",
+    "title": "Callouts",
+    "section": "",
+    "text": "You can specify the title of a callout block.\n\n\n\n\n\n\nNoteRead the note below\n\n\n\nRead the title above\n\n\nCode:\n\n::: {.callout-note title=\"Read the note below\"}\nRead the title above\n:::",
+    "crumbs": [
+      "qmd",
+      "Callouts"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html#collapse",
+    "href": "qmds/callouts.html#collapse",
+    "title": "Callouts",
+    "section": "",
+    "text": "You can make a callout block collapsible.\nSet collapse=\"false\" to make the block collapsible but not collapsed by default.\n\n\n\n\n\n\nWarning\n\n\n\n\n\nHunger leads to eating\n\n\n\n\n::: {.callout-warning collapse=\"false}\nHunger leads to eating\n:::\n\nSet collapse=\"TRUE\" to make the collapsible block collapsed by default. Of course you can also add a title.\n\n\n\n\n\n\nImportantExpand this collapsible block\n\n\n\n\n\nCollapse this expanded block\n\n\n\n\n::: {.callout-important collapse=\"true\" title=\"Expand this collapsible block\"}\nCollapse this expanded block\n:::",
+    "crumbs": [
+      "qmd",
+      "Callouts"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html#read-the-note-below",
+    "href": "qmds/callouts.html#read-the-note-below",
+    "title": "Callouts",
+    "section": "",
+    "text": "Read the title above",
+    "crumbs": [
+      "qmd",
+      "Callouts"
+    ]
   }
 ]

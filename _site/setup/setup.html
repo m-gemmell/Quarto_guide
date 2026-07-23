@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-e01fab11d61a2142ddad070d9ba27542.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-eba3d1f9183fcd8f42c6c163bb6861b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-dark-8aeb747a01496e9352f81c111523cdce.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -275,6 +275,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../css/css.html"> 
 <span class="menu-text">css</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../yml/yml.html"> 
+<span class="menu-text">yml</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -339,6 +343,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#r" id="toc-r" class="nav-link" data-scroll-target="#r">R</a></li>
   <li><a href="#spell-checker" id="toc-spell-checker" class="nav-link" data-scroll-target="#spell-checker">Spell checker</a></li>
   </ul></li>
+  <li><a href="#create-quarto-website-project" id="toc-create-quarto-website-project" class="nav-link" data-scroll-target="#create-quarto-website-project">Create Quarto website project</a>
+  <ul class="collapse">
+  <li><a href="#quarto-command" id="toc-quarto-command" class="nav-link" data-scroll-target="#quarto-command">Quarto command</a></li>
+  <li><a href="#copying-a-template" id="toc-copying-a-template" class="nav-link" data-scroll-target="#copying-a-template">Copying a template</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -366,10 +375,33 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a>: Useful for spell checking normal words</p>
 <p>When using this click on a misspelt word (signified by squiggly underlining) and press “ctrl+.” to get a dropdown of suggestions</p>
 <p>To change to GB spelling:</p>
-<pre><code>1. Go to "Extension" on VScode (On far left, icon is three squares and a diamond)
-2. Click on the gear icon for Code Spell Checker
-3. Click on "Settings"
-4. Change "C Spell: Language" to "en-GB"</code></pre>
+<ol type="1">
+<li>Go to “Extension” on VScode (On far left, icon is three squares and a diamond)</li>
+<li>Click on the gear icon for Code Spell Checker</li>
+<li>Click on “Settings”</li>
+<li>Change “C Spell: Language” to “en-GB”</li>
+</ol>
+</section>
+</section>
+<section id="create-quarto-website-project" class="level2">
+<h2 class="anchored" data-anchor-id="create-quarto-website-project">Create Quarto website project</h2>
+<p>You can create a quarto project in 2 different way, a quarto command or copying a template.</p>
+<section id="quarto-command" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-command">Quarto command</h3>
+<p>In the command palette in VScode (the text bar at the top middle) type in the following:</p>
+<p><code>&gt;Quarto: Create Project</code></p>
+<p>Further instructions are here: <a href="https://quarto.org/docs/websites/#quick-start">Quarto Website Quick Start</a></p>
+</section>
+<section id="copying-a-template" class="level3">
+<h3 class="anchored" data-anchor-id="copying-a-template">Copying a template</h3>
+<p>Optionally, you can copy a template or other project from github and edit it.</p>
+<p>If you already have the files you can then copy and paste to a new directory (ensure you don’t copy over any git files/directories if you do this).</p>
+<p>To download all the files of a gihub repo:</p>
+<ol type="1">
+<li>Navigate to the page via a browser (e.g.&nbsp;https://github.com/m-gemmell/Quarto_guide)</li>
+<li>Click on the green <code>&lt;&gt; Code</code> button</li>
+<li>Select “Download ZIP”</li>
+</ol>
 
 
 </section>

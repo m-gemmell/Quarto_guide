@@ -1,0 +1,15 @@
+{
+  "hash": "3a5c00752d55e8518b6fad3704ec0589",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Overview\"\neditor: \n  markdown: \n    wrap: sentence\nengine: knitr\n---\n\n![](images/quarto_quarters.png){width=150px fig-align=\"center\"}\n\nThe following website contains a quick guide/cookbook for creating websites with quarto.\n\n## Authoring a website\n\nOnce you have created your various quarto files you can create your website's html files with the following command in bash.\n\n\n::: {.cell}\n\n```{.bash .cell-code}\nquarto preview\n```\n:::\n\n\n::: {.callout-note}\nEnsue you are in the main directory of your quarto project when running the above.\n:::\n\nYou can host your html files through various means. I use the free service [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).\n\n## Creating quarto files\n\nThe various parts, sections, and pages of this website provide a quick guide and resources for creating a quarto website.\nThese include:\n\n- [Setup](/setup/setup.qmd): Setting up quarto, VScode, and a quarto website project\n- [qmd](qmds/qmds.qmd): Writing `.qmd` files with markdown\n- [css](css/css.qmd): Setting the website theme, and the text font & colour\n  - This shows the use of `.scss` files ([Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/))\n- [yml](yml/yml.qmd): Setting the format, structure, and other global options for the website\n\n\n## Further resources\n\nOther resources include:\n\n- [Main Quarto website](https://quarto.org/)\n- [Quarto: The practical Guide](https://quarto-tdg.org/)",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "hash": "6c8c385b4cf753d90eda46a839a38418",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\n---\n# Website options",
+    "supporting": [
+      "website_options_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

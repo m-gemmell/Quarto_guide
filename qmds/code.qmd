@@ -1,0 +1,21 @@
+---
+engine: knitr
+---
+
+# Code
+
+
+
+## Non R code
+
+You can include bash and python code.
+
+
+If you in do you will unfrintunately need the below code at the top of each `.qmd` page that contains non R code.
+You need this even if you set `eval=FALSE`.
+
+```{bash, eval=FALSE}
+---
+engine: knitr
+---
+```

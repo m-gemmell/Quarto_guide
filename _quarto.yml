@@ -3,7 +3,9 @@ project:
 editor: source
 #Website
 website:
+  ## Turn Breadcrumbs off
   bread-crumbs: false
+  ## Icon seen on tab
   favicon: /images/quarto_quarters.png
   page-navigation: true
   title: "MG Quarto Guide"
@@ -37,7 +39,7 @@ website:
       - icon: github
         href: https://github.com/m-gemmell/Quarto_guide
         aria-label: GitHub
-##Apge footer
+##Page footer
   page-footer:
     left: |
       ![](/images/quarto_quarters.png){width=50}
@@ -65,8 +67,10 @@ website:
       align: left
       contents:
       - href: qmds/qmds.qmd
+      - href: qmds/callouts.qmd
       - section: "Interactivity"
         contents:
+        - href: qmds/code.qmd
         - href: qmds/webexercises.qmd
     - id: css
       title: "css"
@@ -75,6 +79,22 @@ website:
       align: left
       contents:
       - href: css/css.qmd
+    - id: yml
+      title: "yml"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+      - href: yml/yml.qmd
+      - href: project.qmd
+      - section: "Website & structure"
+        contents:
+        - href: yml/website.qmd
+        - href: yml/website_options.qmd
+        - href: yml/navbar.qmd
+        - href: yml/page_footer.qmd
+        - href: yml/sidebar.qmd
+      -href: yml/format.qmd
 #Format
 format:
   html:

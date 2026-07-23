@@ -1,0 +1,15 @@
+{
+  "hash": "245253ec0241769c7a8176caad3456b4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\n---\n\n# Code\n\n\n\n## Non R code\n\nYou can include bash and python code.\n\n\nIf you in do you will unfrintunately need the below code at the top of each `.qmd` page that contains non R code.\nYou need this even if you set `eval=FALSE`.\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n---\nengine: knitr\n---\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

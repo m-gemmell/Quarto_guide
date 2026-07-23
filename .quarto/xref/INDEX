@@ -16,5 +16,32 @@
   },
   "yml/yml.qmd": {
     "yml.html": "d3ddf27a"
+  },
+  "yml/project.qmd": {
+    "project.html": "f022f574"
+  },
+  "qmds/code.qmd": {
+    "code.html": "8a31bd1f"
+  },
+  "qmds/callouts.qmd": {
+    "callouts.html": "305604b1"
+  },
+  "yml/website.qmd": {
+    "website.html": "f2549b4c"
+  },
+  "yml/format.qmd": {
+    "format.html": "15f7d1a1"
+  },
+  "yml/navbar.qmd": {
+    "navbar.html": "fb9762a4"
+  },
+  "yml/page_footer.qmd": {
+    "page_footer.html": "f89f7cf8"
+  },
+  "yml/sidebar.qmd": {
+    "sidebar.html": "2341b476"
+  },
+  "yml/website_options.qmd": {
+    "website_options.html": "0a177985"
   }
 }

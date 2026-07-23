@@ -1,0 +1,15 @@
+{
+  "hash": "fa6da6a05c38644b4efd8fe823cf61e0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\n---\n# Project\n\nThe type of project (i.e. is it a website, book, etc.)\n\nFor a normal quarto website you can have the following.\n\n\n::: {.cell}\n\n```{.bash .cell-code}\nproject:\n  type: website\n```\n:::\n\n\n::: {.callout-tip}\nNote that the top line of a segment (i.e. `project:`) has no indentation.\nThen all lines in that segment have at least one level of indentations (e.g. `type:website` has one level).\n:::\n\nYou can also create:\n\n- [Books](https://quarto.org/docs/reference/projects/books.html)\n- [Manuscripts](https://quarto.org/docs/reference/projects/manuscripts.html)\n- [Presentations](https://quarto.org/docs/presentations/)\n\nThere are also other [Project options](https://quarto.org/docs/reference/projects/options.html) than just `type:`.\nFor example you can set the output director with `output-dir:`.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

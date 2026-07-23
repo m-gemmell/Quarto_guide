@@ -1,0 +1,15 @@
+{
+  "hash": "e65c520442b7da153f69b119548bddc1",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\n---\n# Callouts\n\nCallout out boxes are a nice way to signpost something.\nThe below shows the callout boxes and the code that is included in the `.qmd` file to create them.\n\nThere are four types.\n\n- Note\n- Warning\n- Important\n- Caution\n\nYou can also include titles or make them collapsible.\n\n## Note\n\n::: {.callout-note}\nThis is a note.\n:::\n\nCode:\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n::: {.callout-note}\nThis is a note.\n:::\n```\n:::\n\n\n## Warning\n\n::: {.callout-warning}\nSmoking leads to coughing\n:::\n\nCode:\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n::: {.callout-warning}\nSmoking leads to coughing\n:::\n```\n:::\n\n\n## Important\n\n::: {.callout-important}\nRemember to breath when stretching\n:::\n\nCode:\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n::: {.callout-important}\nRemember to breath when stretching\n:::\n```\n:::\n\n\n## Caution\n\n::: {.callout-caution}\nDon't get stuck in the circular loop of the next callout block\n:::\n\nCode:\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n::: {.callout-caution}\nDon't get stuck in the circular loops of the next callout blocks\n:::\n```\n:::\n\n\n## Title\n\nYou can specify the title of a callout block.\n\n::: {.callout-note title=\"Read the note below\"}\nRead the title above\n:::\n\nCode:\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n::: {.callout-note title=\"Read the note below\"}\nRead the title above\n:::\n```\n:::\n\n\n## Collapse\n\nYou can make a callout block collapsible.\n\nSet `collapse=\"false\"` to make the block collapsible but not collapsed by default.\n\n::: {.callout-warning collapse=\"false}\nHunger leads to eating\n:::\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n::: {.callout-warning collapse=\"false}\nHunger leads to eating\n:::\n```\n:::\n\n\nSet `collapse=\"TRUE\"` to make the collapsible block collapsed by default.\nOf course you can also add a title.\n\n::: {.callout-important collapse=\"true\" title=\"Expand this collapsible block\"}\nCollapse this expanded block\n:::\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n::: {.callout-important collapse=\"true\" title=\"Expand this collapsible block\"}\nCollapse this expanded block\n:::\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

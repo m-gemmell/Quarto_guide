@@ -1,0 +1,117 @@
+---
+engine: knitr
+---
+# Callouts
+
+Callout out boxes are a nice way to signpost something.
+The below shows the callout boxes and the code that is included in the `.qmd` file to create them.
+
+There are four types.
+
+- Note
+- Warning
+- Important
+- Caution
+
+You can also include titles or make them collapsible.
+
+## Note
+
+::: {.callout-note}
+This is a note.
+:::
+
+Code:
+
+```{bash,eval=FALSE}
+::: {.callout-note}
+This is a note.
+:::
+```
+
+## Warning
+
+::: {.callout-warning}
+Smoking leads to coughing
+:::
+
+Code:
+
+```{bash,eval=FALSE}
+::: {.callout-warning}
+Smoking leads to coughing
+:::
+```
+
+## Important
+
+::: {.callout-important}
+Remember to breath when stretching
+:::
+
+Code:
+
+```{bash,eval=FALSE}
+::: {.callout-important}
+Remember to breath when stretching
+:::
+```
+
+## Caution
+
+::: {.callout-caution}
+Don't get stuck in the circular loop of the next callout block
+:::
+
+Code:
+
+```{bash,eval=FALSE}
+::: {.callout-caution}
+Don't get stuck in the circular loops of the next callout blocks
+:::
+```
+
+## Title
+
+You can specify the title of a callout block.
+
+::: {.callout-note title="Read the note below"}
+Read the title above
+:::
+
+Code:
+
+```{bash,eval=FALSE}
+::: {.callout-note title="Read the note below"}
+Read the title above
+:::
+```
+
+## Collapse
+
+You can make a callout block collapsible.
+
+Set `collapse="false"` to make the block collapsible but not collapsed by default.
+
+::: {.callout-warning collapse="false}
+Hunger leads to eating
+:::
+
+```{bash,eval=FALSE}
+::: {.callout-warning collapse="false}
+Hunger leads to eating
+:::
+```
+
+Set `collapse="TRUE"` to make the collapsible block collapsed by default.
+Of course you can also add a title.
+
+::: {.callout-important collapse="true" title="Expand this collapsible block"}
+Collapse this expanded block
+:::
+
+```{bash,eval=FALSE}
+::: {.callout-important collapse="true" title="Expand this collapsible block"}
+Collapse this expanded block
+:::
+```
