@@ -1,0 +1,16 @@
+# yml
+
+The file `_quarto.yml` determines the overall structure of the quarto website.
+It includes various parts.
+
+An example can be see in the following link containing the `_quarto.yml` file for this website.
+
+[The websites _quarto.yml on github]()
+
+## The Project type
+
+
+
+
+
+- [The project information](/yml/project.qmd): The type of project 

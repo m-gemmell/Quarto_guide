@@ -1,0 +1,57 @@
+// Dark theme
+
+/*-- scss:defaults --*/
+
+// Import fonts
+// Lexend
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+// Fira mono
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lexend:wght@100..900&display=swap');
+
+// Colors
+$ibm-blue: #648fff;
+$ibm-purple: #785ef0;
+$ibm-maroon: #dc267f;
+$ibm-orange: #fe6100;
+$ibm-yellow: #ffb000;
+$black: #000000;
+$light-grey: #f9f9f9;
+
+// Base document colors
+// https://quarto.org/docs/output-formats/html-themes.html
+// Nav bar (i.e. top)
+$navbar-bg: $ibm-blue;
+$navbar-fg: $light-grey;
+$navbar-hl: $ibm-yellow; // highlight color when hovering over navbar links
+$navbar-color: $light-grey;
+// Footer (i.e. bottom)
+$footer-bg: $ibm-blue; // footer
+$footer-fg: $black;
+$toc-hl: $ibm-yellow;
+// Text of side bar (i.e. left)
+$sidebar-hl: $ibm-yellow;
+$sidebar-fg: $light-grey;
+// Colour of links
+$link-color: $ibm-blue;
+
+$pagination-color: $ibm-blue;
+
+
+.navbar-logo {
+  max-height: 200px;
+}
+
+body {
+  font-family: "Lexend";
+}
+h1 {
+  font-family: "Lexend";
+  text-align: center;
+}
+h2, h3, h4, h5, h6 {
+  font-family: "Lexend";
+}
+monofont {
+  font-family: "Fira+Mono";
+}
+

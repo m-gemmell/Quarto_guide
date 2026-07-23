@@ -1,0 +1,93 @@
+project:
+  type: website
+editor: source
+#Website
+website:
+  bread-crumbs: false
+  favicon: /images/quarto_quarters.png
+  page-navigation: true
+  title: "MG Quarto Guide"
+  description: "A guide to using quarto"
+##Navbar
+  navbar:
+    title: MG Quarto Guide
+    logo: "images/quarto_quarters.png"
+    collapse-below: lg
+###Navbar left
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Setup"
+        href: setup/setup.qmd
+      - text: "qmd"
+        href: qmds/qmds.qmd
+      - text: "css"
+        href: css/css.qmd
+      - text: "yml"
+        href: yml/yml.qmd
+###Navbar right
+    right:
+    # List of icons: https://icons.getbootstrap.com/
+      - icon: cup
+        href: https://ko-fi.com/waveofinspiration
+        aria-label: Ko-fi
+      - icon: bluesky
+        href: https://bsky.app/profile/m-gemmell.bsky.social
+        aria-label: BlueSky
+      - icon: github
+        href: https://github.com/m-gemmell/Quarto_guide
+        aria-label: GitHub
+##Apge footer
+  page-footer:
+    left: |
+      ![](/images/quarto_quarters.png){width=50}
+    center: |
+      [![](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K6IRLA0)
+##Sidebar
+  sidebar:
+    - id: Overview
+      title: "Overview"
+      style: "floating"
+      align: left
+      contents:
+        - href: index.qmd
+    - id: Setup
+      title: "Setup"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+      - href: setup/setup.qmd
+    - id: qmd
+      title: "qmd"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+      - href: qmds/qmds.qmd
+      - section: "Interactivity"
+        contents:
+        - href: qmds/webexercises.qmd
+    - id: css
+      title: "css"
+      style: "floating"
+      collapse-level: 2
+      align: left
+      contents:
+      - href: css/css.qmd
+#Format
+format:
+  html:
+    grid:
+      sidebar-width: 200px
+      body-width: 1200px
+      margin-width: 150px
+      gutter-width: 0.75em
+    css: include/webex.css
+    include-after-body: include/webex.js
+    #HTML themes: https://quarto.org/docs/output-formats/html-themes.html
+    theme: 
+      dark: [darkly, styles_dark.scss]
+      light: [styles_light.scss]
+    mainfont: Lexend
+    toc: true

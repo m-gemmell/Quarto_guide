@@ -1,0 +1,46 @@
+# Webexercises
+
+[`webexercises`](https://debruine.github.io/webexercises/) is an R package that allows you to include interactive quizzes in quarto markdown (`.qmd`) and R markdown (`.rmd`) created html pages. 
+
+## Install
+
+Install through R with:
+
+```{r, eval=FALSE}
+install.packages("webexercises")
+```
+
+## Initialise
+
+Open the main directory of your quarto site (directory that contains the `index.qmd` and `_quarto.yml`).
+Run the following command in an R terminal:
+
+```{r, eval=FALSE}
+library("webexercises")
+webexercises::add_to_quarto()
+```
+
+This will add the following:
+
+A `webex.css` and `webex.js` in an include directory.
+For a nice MCQ presentation i change the `.webex-radiogroup label` in `webex.css` to:
+
+```{bash, eval=FALSE}
+.webex-radiogroup label {
+  /*Text colour*/
+  color: : #aaaaaa;
+  margin-left: 2em;
+  margin-bottom: 0.25em;
+  text-indent: -1em;
+  padding-left: 0.5em;
+  font-weight: 400;
+  display: block;
+  /*Set border of text to solid and dark grey*/
+  border: 2px solid #808080;
+  border-radius: 0.25em;
+}
+```
+
+Additionally, a `webexercises.qmd` file is created.
+This contains examples of the various different quizzes.
+I delete this.

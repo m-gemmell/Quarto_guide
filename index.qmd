@@ -1,0 +1,11 @@
+---
+title: "Overview"
+editor: 
+  markdown: 
+    wrap: sentence
+---
+
+![](images/quarto_quarters.png){width=200px fig-align="center"}
+
+The following website contains a quick guide/cookbook for creating websites with quarto.
+Please see Quarto's official [Get Started page](https://quarto.org/docs/get-started/) if you are beginning with quarto.

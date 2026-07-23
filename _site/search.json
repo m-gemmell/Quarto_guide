@@ -1,0 +1,103 @@
+[
+  {
+    "objectID": "setup/setup.html",
+    "href": "setup/setup.html",
+    "title": "Setup",
+    "section": "",
+    "text": "To use quarto I would suggest using VScode (You can “Disable Ai Features” in the settings).\nTo install Quarto see The Quarto Get Started page.\n\n\nFor this site you will also want to follow the below install instruction.\n\n\nR in Visual Studio Code\n\n\n\nCode Spell Checker: Useful for spell checking normal words\nWhen using this click on a misspelt word (signified by squiggly underlining) and press “ctrl+.” to get a dropdown of suggestions\nTo change to GB spelling:\n1. Go to \"Extension\" on VScode (On far left, icon is three squares and a diamond)\n2. Click on the gear icon for Code Spell Checker\n3. Click on \"Settings\"\n4. Change \"C Spell: Language\" to \"en-GB\"",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "setup/setup.html#extensions",
+    "href": "setup/setup.html#extensions",
+    "title": "Setup",
+    "section": "",
+    "text": "For this site you will also want to follow the below install instruction.\n\n\nR in Visual Studio Code\n\n\n\nCode Spell Checker: Useful for spell checking normal words\nWhen using this click on a misspelt word (signified by squiggly underlining) and press “ctrl+.” to get a dropdown of suggestions\nTo change to GB spelling:\n1. Go to \"Extension\" on VScode (On far left, icon is three squares and a diamond)\n2. Click on the gear icon for Code Spell Checker\n3. Click on \"Settings\"\n4. Change \"C Spell: Language\" to \"en-GB\"",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "qmds/qmds.html",
+    "href": "qmds/qmds.html",
+    "title": "qmd files",
+    "section": "",
+    "text": "qmd files\nQuarto uses .qmd which are essentially markdown files (.qmd = quarto markdown).",
+    "crumbs": [
+      "qmd",
+      "qmd files"
+    ]
+  },
+  {
+    "objectID": "css/css.html",
+    "href": "css/css.html",
+    "title": "css",
+    "section": "",
+    "text": "css",
+    "crumbs": [
+      "css"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "The following website contains a quick guide/cookbook for creating websites with quarto. Please see Quarto’s official Get Started page if you are beginning with quarto.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "qmds/webexercises.html",
+    "href": "qmds/webexercises.html",
+    "title": "Webexercises",
+    "section": "",
+    "text": "webexercises is an R package that allows you to include interactive quizzes in quarto markdown (.qmd) and R markdown (.rmd) created html pages.\n\n\nInstall through R with:\n\ninstall.packages(\"webexercises\")\n\n\n\n\nOpen the main directory of your quarto site (directory that contains the index.qmd and _quarto.yml). Run the following command in an R terminal:\n\nlibrary(\"webexercises\")\nwebexercises::add_to_quarto()\n\nThis will add the following:\nA webex.css and webex.js in an include directory. For a nice MCQ presentation i change the .webex-radiogroup label in webex.css to:\n\n.webex-radiogroup label {\n  /*Text colour*/\n  color: : #aaaaaa;\n  margin-left: 2em;\n  margin-bottom: 0.25em;\n  text-indent: -1em;\n  padding-left: 0.5em;\n  font-weight: 400;\n  display: block;\n  /*Set border of text to solid and dark grey*/\n  border: 2px solid #808080;\n  border-radius: 0.25em;\n}\n\nAdditionally, a webexercises.qmd file is created. This contains examples of the various different quizzes. I delete this.",
+    "crumbs": [
+      "qmd",
+      "Interactivity",
+      "Webexercises"
+    ]
+  },
+  {
+    "objectID": "qmds/webexercises.html#install",
+    "href": "qmds/webexercises.html#install",
+    "title": "Webexercises",
+    "section": "",
+    "text": "Install through R with:\n\ninstall.packages(\"webexercises\")",
+    "crumbs": [
+      "qmd",
+      "Interactivity",
+      "Webexercises"
+    ]
+  },
+  {
+    "objectID": "qmds/webexercises.html#initialise",
+    "href": "qmds/webexercises.html#initialise",
+    "title": "Webexercises",
+    "section": "",
+    "text": "Open the main directory of your quarto site (directory that contains the index.qmd and _quarto.yml). Run the following command in an R terminal:\n\nlibrary(\"webexercises\")\nwebexercises::add_to_quarto()\n\nThis will add the following:\nA webex.css and webex.js in an include directory. For a nice MCQ presentation i change the .webex-radiogroup label in webex.css to:\n\n.webex-radiogroup label {\n  /*Text colour*/\n  color: : #aaaaaa;\n  margin-left: 2em;\n  margin-bottom: 0.25em;\n  text-indent: -1em;\n  padding-left: 0.5em;\n  font-weight: 400;\n  display: block;\n  /*Set border of text to solid and dark grey*/\n  border: 2px solid #808080;\n  border-radius: 0.25em;\n}\n\nAdditionally, a webexercises.qmd file is created. This contains examples of the various different quizzes. I delete this.",
+    "crumbs": [
+      "qmd",
+      "Interactivity",
+      "Webexercises"
+    ]
+  },
+  {
+    "objectID": "yml/yml.html",
+    "href": "yml/yml.html",
+    "title": "yml",
+    "section": "",
+    "text": "yml\nThe file _quarto.yml determines the overall structure of the quarto website. It includes the following parts:"
+  },
+  {
+    "objectID": "yml/yml.html#the-project-type",
+    "href": "yml/yml.html#the-project-type",
+    "title": "yml",
+    "section": "",
+    "text": "The project information: The type of project"
+  }
+]
