@@ -1,10 +1,8 @@
 ---
-title: "Overview"
-editor: 
-  markdown: 
-    wrap: sentence
 engine: knitr
 ---
+
+# Overview
 
 ![](images/quarto_quarters.png){width=150px fig-align="center"}
 
@@ -22,6 +20,11 @@ quarto preview
 Ensue you are in the main directory of your quarto project when running the above.
 :::
 
+When you run the above it will create the files but also open a preview of the website in a browser.
+With the `render-on-save: true` in our [`_quarto.yml` file](/yml/editor.qmd) the preview will update as you save changes in your files.
+However, this seems to be a bit consistent, to force the preview to update go to your `_quart.yml` file and save it.
+You can do this even if their are no changes to the `_quarto.yml` to save.
+
 You can host your html files through various means. I use the free service [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
 
 ## Creating quarto files
@@ -30,6 +33,7 @@ The various parts, sections, and pages of this website provide a quick guide and
 These include:
 
 - [Setup](/setup/setup.qmd): Setting up quarto, VScode, and a quarto website project
+  - Also includes install instructions for the various R packages described in this website
 - [qmd](qmds/qmds.qmd): Writing `.qmd` files with markdown
 - [css](css/css.qmd): Setting the website theme, and the text font & colour
   - This shows the use of `.scss` files ([Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/))

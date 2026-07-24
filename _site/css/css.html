@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../css/dark_scss.html" rel="next">
 <link href="..//images/quarto_quarters.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -44,8 +45,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e01fab11d61a2142ddad070d9ba27542.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-eba3d1f9183fcd8f42c6c163bb6861b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-fffee755bb179c3a465e8e64ffa93887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9a92e1b47dab2c5aa4b982fe402c8987.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -275,6 +276,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link active" href="../css/css.html" aria-current="page"> 
 <span class="menu-text">css</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../yml/yml.html"> 
+<span class="menu-text">yml</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
@@ -322,6 +327,29 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">css</span></a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Dark and Light</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../css/dark_scss.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dark scss</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../css/light_scss.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Light scss</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -332,7 +360,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#css" id="toc-css" class="nav-link active" data-scroll-target="#css">css</a></li>
+  <li><a href="#css" id="toc-css" class="nav-link active" data-scroll-target="#css">css</a>
+  <ul class="collapse">
+  <li><a href="#files" id="toc-files" class="nav-link" data-scroll-target="#files">Files</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -345,8 +376,19 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="css" class="level1">
 <h1>css</h1>
+<p>CSS stands for Cascading STyle Sheets and is a language for styling HTML web pages as well other documents.</p>
+<p>I specifically use <code>.scss</code> files (<a href="https://sass-lang.com/">Sass: Syntactically Awesome Style Sheets</a>). They have all the functionality of css files but more to make it easier.</p>
+<section id="files" class="level2">
+<h2 class="anchored" data-anchor-id="files">Files</h2>
+<p>We have set a light and dark theme for this website. Therefore we use 2 scss files:</p>
+<ul>
+<li><code>styles_dark.scss</code> for the dark theme</li>
+<li><code>styles_light.scss</code> for the light theme</li>
+</ul>
+<p>These are designated in the <a href="../yml/format.html">format segment of our <code>_quarto.yml</code> file</a>.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -969,6 +1011,15 @@ window.onload = function() {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../css/dark_scss.html" class="pagination-link" aria-label="Dark scss">
+        <span class="nav-page-text">Dark scss</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

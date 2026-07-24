@@ -1,0 +1,151 @@
+---
+engine: knitr
+---
+```{r, echo=FALSE, warning=FALSE, results=FALSE, output=FALSE}
+library("icons")
+```
+
+# Icons
+
+You can use Icons in your bookdown
+
+Package site: [https://github.com/mitchelloharawild/icons](https://github.com/mitchelloharawild/icons)
+
+::: {.callout-note}
+You will only be able to use free icons.
+:::
+
+## Fontawesome
+
+Generally FOnt awesome is my first choice for most icons.
+
+The below code can be used to add `r icons::icon_style(icons::fontawesome("rocket", style="solid"), fill = "#648fff")`. Colour chosen to work on Light and Dark styles.
+
+````{verbatim}
+`r icons::icon_style(icons::fontawesome("rocket", style="solid"), fill = "#648fff")`
+````
+
+To add to text do like so:
+
+````{verbatim}
+A compass 
+(`r icons::icon_style(icons::fontawesome("compass", style="solid"), fill = "#648fff")`) 
+is useful to find north.
+````
+
+This will produce:
+
+A compass 
+(`r icons::icon_style(icons::fontawesome("compass", style="solid"), fill = "#648fff")`)
+is useful to find north.
+
+::: {.callout-note}
+You need to set the style fontawesome but not the below 2 icon sets.
+More info below in the [Searching part](#searching) and [Fontawesome styles](#fontawesome-styles).
+:::
+
+## Ionicons
+
+Ionicons is my second choice.
+
+The below code can be used to add `r icons::icon_style(icons::ionicons("calculator"), fill = "#648fff")`.
+
+````{verbatim}
+`r icons::icon_style(icons::ionicons("calculator"), fill = "#648fff")`
+````
+
+## Bioicons
+
+Bioicons is good for biological icons.
+
+The below code can be used to add `r icons::bioicons("dna-7")`.
+
+````{verbatim}
+`r icons::bioicons("dna-7")`
+````
+
+## Searching
+
+Search for your icons via the following websites:
+
+- [Fontawesome](https://fontawesome.com/search)
+- [Ionicons](https://ionic.io/ionicons)
+- [Bioicons](https://bioicons.com/)
+
+You can check if the name will work with:
+
+```{r, eval=TRUE}
+icons::icon_find("rocket")
+```
+
+You get a bunch of text but the important lines are:
+
+````{verbatim}
+$`ionicons$rocket`
+````
+
+and
+
+````{verbatim}
+$`fontawesome$solid$rocket`
+````
+
+This shows there is a rocket icon in ionicons and fontawesome.
+
+Let's display them.
+
+**Ionicons:**
+
+`r icons::icon_style(icons::ionicons("rocket"), fill = "#648fff")`
+
+Code:
+
+````{verbatim}
+`r icons::icon_style(icons::ionicons("rocket"), fill = "#648fff")`
+````
+
+**Fontawesome:**
+
+`r icons::icon_style(icons::fontawesome("rocket", style="solid"), fill = "#648fff")`
+
+Code:
+
+````{verbatim}
+`r icons::icon_style(icons::fontawesome("rocket", style="solid"), fill = "#648fff")`
+````
+
+## Fontawesome styles
+
+Notice in the search line for fontawesome we had the style (`solid`) between the set (`fontawesome`) and the icon (`rocket`).
+This is because fontawesome will have some icons with multiple styles.
+An example is circle.
+
+```{r, eval=TRUE}
+icons::icon_find("circle")
+```
+
+We can display the solid and regular circle for fontawesome.
+
+**Solid circle:**
+
+`r icons::icon_style(icons::fontawesome("circle", style="solid"), fill = "#648fff")`
+
+Code:
+
+````{verbatim}
+`r icons::icon_style(icons::fontawesome("circle", style="solid"), fill = "#648fff")`
+````
+
+**regular circle:**
+
+`r icons::icon_style(icons::fontawesome("circle", style="regular"), fill = "#648fff")`
+
+Code:
+
+````{verbatim}
+`r icons::icon_style(icons::fontawesome("circle", style="regular"), fill = "#648fff")`
+````
+
+## Installing icons
+
+See install and icon set download instructions in the [setup page](/setup/setup.qmd#r-package-installs). 

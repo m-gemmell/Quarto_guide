@@ -48,3 +48,25 @@ To download all the files of a gihub repo:
 1. Navigate to the page via a browser (e.g. https://github.com/m-gemmell/Quarto_guide)
 2. Click on the green `<> Code` button
 3. Select "Download ZIP"
+
+## R package installs
+
+Their are various R packages that are shown for various functions in quarto.
+Below are the install instructions for them all.
+
+```{r, eval=FALSE}
+#Webexercises
+install.packages("webexercises")
+#Tippy tooltips
+install.packages("tippy")
+#Reticulate to allow use of python in knitr
+install.packages("reticulate")
+#Icons, below code also included in that section in this guide
+install.packages("remotes")
+remotes::install_github("mitchelloharawild/icons")
+#Download icon sets
+icons::download_fontawesome()
+icons::download_ionicons()
+icons::download_bioicons()
+```
+

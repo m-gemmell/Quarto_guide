@@ -1,0 +1,13 @@
+# Github code embed
+
+To embed code from a github page you can use the site [https://emgithub.com/](https://emgithub.com/).
+
+To do so:
+
+1. Put the link to the github file into the top bar
+2. Copy the code form the `<script>` to embed
+3. Paste the code into your .qmd file
+
+For example:
+
+Github link: 

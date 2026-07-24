@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Overview – MG Quarto Guide</title>
+<title>MG Quarto Guide</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -79,8 +79,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-e01fab11d61a2142ddad070d9ba27542.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-eba3d1f9183fcd8f42c6c163bb6861b8.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-fffee755bb179c3a465e8e64ffa93887.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-9a92e1b47dab2c5aa4b982fe402c8987.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -344,7 +344,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <a class="flex-grow-1 no-decor" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title">Overview</h1>
+          <h1 class="quarto-secondary-nav-title"></h1>
         </a>     
     </div>
   </nav>
@@ -371,35 +371,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#authoring-a-website" id="toc-authoring-a-website" class="nav-link active" data-scroll-target="#authoring-a-website">Authoring a website</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a>
+  <ul class="collapse">
+  <li><a href="#authoring-a-website" id="toc-authoring-a-website" class="nav-link" data-scroll-target="#authoring-a-website">Authoring a website</a></li>
   <li><a href="#creating-quarto-files" id="toc-creating-quarto-files" class="nav-link" data-scroll-target="#creating-quarto-files">Creating quarto files</a></li>
   <li><a href="#further-resources" id="toc-further-resources" class="nav-link" data-scroll-target="#further-resources">Further resources</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title d-none d-lg-block">Overview</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
+<section id="overview" class="level1">
+<h1>Overview</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/quarto_quarters.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="150"></p>
@@ -425,13 +414,17 @@ Note
 <p>Ensue you are in the main directory of your quarto project when running the above.</p>
 </div>
 </div>
+<p>When you run the above it will create the files but also open a preview of the website in a browser. With the <code>render-on-save: true</code> in our <a href="./yml/editor.html"><code>_quarto.yml</code> file</a> the preview will update as you save changes in your files. However, this seems to be a bit consistent, to force the preview to update go to your <code>_quart.yml</code> file and save it. You can do this even if their are no changes to the <code>_quarto.yml</code> to save.</p>
 <p>You can host your html files through various means. I use the free service <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">GitHub pages</a>.</p>
 </section>
 <section id="creating-quarto-files" class="level2">
 <h2 class="anchored" data-anchor-id="creating-quarto-files">Creating quarto files</h2>
 <p>The various parts, sections, and pages of this website provide a quick guide and resources for creating a quarto website. These include:</p>
 <ul>
-<li><a href="./setup/setup.html">Setup</a>: Setting up quarto, VScode, and a quarto website project</li>
+<li><a href="./setup/setup.html">Setup</a>: Setting up quarto, VScode, and a quarto website project
+<ul>
+<li>Also includes install instructions for the various R packages described in this website</li>
+</ul></li>
 <li><a href="./qmds/qmds.html">qmd</a>: Writing <code>.qmd</code> files with markdown</li>
 <li><a href="./css/css.html">css</a>: Setting the website theme, and the text font &amp; colour
 <ul>
@@ -449,6 +442,7 @@ Note
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

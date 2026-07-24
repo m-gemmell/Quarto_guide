@@ -68,7 +68,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmds/code.html" rel="prev">
+<link href="../qmds/tippy_tooltips.html" rel="prev">
 <link href="..//images/quarto_quarters.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -80,8 +80,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e01fab11d61a2142ddad070d9ba27542.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-8aeb747a01496e9352f81c111523cdce.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-2c579ed830dc1fa7afb6e73cf089a11a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9a92e1b47dab2c5aa4b982fe402c8987.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -362,16 +362,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">qmd files</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../qmds/callouts.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Callouts</span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Interactivity</span></a>
+ <span class="menu-text">Static</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -379,8 +373,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../qmds/images.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Images</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmds/callouts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Callouts</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Interactive</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../qmds/code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmds/tippy_tooltips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tippy tooltips</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -401,8 +424,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#webexercises" id="toc-webexercises" class="nav-link active" data-scroll-target="#webexercises">Webexercises</a>
+  <li><a href="#webexercises" id="toc-webexercises" class="nav-link active" data-scroll-target="#webexercises">Webexercises</a></li>
+  <li><a href="#mcqs" id="toc-mcqs" class="nav-link" data-scroll-target="#mcqs">MCQs</a>
   <ul class="collapse">
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
+  <li><a href="#template" id="toc-template" class="nav-link" data-scroll-target="#template">template</a></li>
+  <li><a href="#expandable-box" id="toc-expandable-box" class="nav-link" data-scroll-target="#expandable-box">Expandable box</a></li>
   <li><a href="#install" id="toc-install" class="nav-link" data-scroll-target="#install">Install</a></li>
   <li><a href="#initialise" id="toc-initialise" class="nav-link" data-scroll-target="#initialise">Initialise</a></li>
   </ul></li>
@@ -418,37 +445,105 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="webexercises" class="level1">
 <h1>Webexercises</h1>
-<p><a href="https://debruine.github.io/webexercises/"><code>webexercises</code></a> is an R package that allows you to include interactive quizzes in quarto markdown (<code>.qmd</code>) and R markdown (<code>.rmd</code>) created html pages.</p>
+<p><a href="https://debruine.github.io/webexercises/"><code>webexercises</code></a> is an R package that allows you to include interactive quizzes in quarto markdown (<code>.qmd</code>) and R markdown (<code>.Rmd</code>) created html pages.</p>
+<p>This page includes:</p>
+<ul>
+<li>MCQ examples &amp; template</li>
+<li>Expandable box example/template</li>
+<li>Installation</li>
+<li>Initialisation for your quarto project</li>
+</ul>
+<p>There are other widgets that I don’t find use for in the <a href="https://psyteachr.github.io/webexercises/articles/webexercises.html">webexercises website</a>.</p>
+</section>
+<section id="mcqs" class="level1">
+<h1>MCQs</h1>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<p>MCQ:</p>
+<ol type="1">
+<li>Question?
+<div id="radio_PSLZWMUJGR" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_PSLZWMUJGR" value=""> <span><strong>A1</strong></span></label><label><input type="radio" autocomplete="off" name="radio_PSLZWMUJGR" value=""> <span><strong>A2</strong></span></label><label><input type="radio" autocomplete="off" name="radio_PSLZWMUJGR" value="answer"> <span><strong>A3</strong></span></label>
+</div></li>
+</ol>
+<p>Code:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>```{r, echo = FALSE}</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>opts_p &lt;- c("**A1**", "**A2**", answer="**A3**")</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>1. Question? `r longmcq(opts_p)`</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="template" class="level2">
+<h2 class="anchored" data-anchor-id="template">template</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>```{r, echo = FALSE}</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>opts_p &lt;- c("** **", "** **", "** **")</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>```</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>`r longmcq(opts_p)`</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="expandable-box" class="level2">
+<h2 class="anchored" data-anchor-id="expandable-box">Expandable box</h2>
+<p>Expandable box:</p>
+<div class="webex-solution">
+<button>
+Title
+</button>
+<p>Contents</p>
+</div>
+<p>Code:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="st">`</span><span class="at">r hide("Title")</span><span class="st">`</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Contents</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">`</span><span class="at">r unhide()</span><span class="st">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Optionally, you may want to use a <a href="../qmds/callouts.html">callout block</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Title">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Title
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Contents</p>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">:::</span> {.callout-note collapse=<span class="st">"true"</span> title=<span class="st">"Title"</span>}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Contents</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ex">:::</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
 <section id="install" class="level2">
 <h2 class="anchored" data-anchor-id="install">Install</h2>
-<p>Install through R with:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"webexercises"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<p>See install instruction in the <a href="../setup/setup.html#r-package-installs">setup page</a>.</p>
 </section>
 <section id="initialise" class="level2">
 <h2 class="anchored" data-anchor-id="initialise">Initialise</h2>
 <p>Open the main directory of your quarto site (directory that contains the <code>index.qmd</code> and <code>_quarto.yml</code>). Run the following command in an R terminal:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"webexercises"</span>)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>webexercises<span class="sc">::</span><span class="fu">add_to_quarto</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"webexercises"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>webexercises<span class="sc">::</span><span class="fu">add_to_quarto</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>This will add the following:</p>
 <p>A <code>webex.css</code> and <code>webex.js</code> in an include directory. For a nice MCQ presentation i change the <code>.webex-radiogroup label</code> in <code>webex.css</code> to:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">.webex-radiogroup</span> label {</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">/*Text</span> colour<span class="pp">*</span>/</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">color:</span> : <span class="co">#aaaaaa;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">margin-left:</span> 2em<span class="kw">;</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="ex">margin-bottom:</span> 0.25em<span class="kw">;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="ex">text-indent:</span> <span class="at">-1em</span><span class="kw">;</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="ex">padding-left:</span> 0.5em<span class="kw">;</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="ex">font-weight:</span> 400<span class="kw">;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="ex">display:</span> block<span class="kw">;</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="ex">/*Set</span> border of text to solid and dark grey<span class="pp">*</span>/</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="ex">border:</span> 2px solid <span class="co">#808080;</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="ex">border-radius:</span> 0.25em<span class="kw">;</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="er">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">.webex-radiogroup</span> label {</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="ex">/*Text</span> colour<span class="pp">*</span>/</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">color:</span> : <span class="co">#aaaaaa;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="ex">margin-left:</span> 2em<span class="kw">;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="ex">margin-bottom:</span> 0.25em<span class="kw">;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="ex">text-indent:</span> <span class="at">-1em</span><span class="kw">;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="ex">padding-left:</span> 0.5em<span class="kw">;</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="ex">font-weight:</span> 400<span class="kw">;</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="ex">display:</span> block<span class="kw">;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="ex">/*Set</span> border of text to solid and dark grey<span class="pp">*</span>/</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="ex">border:</span> 2px solid <span class="co">#808080;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="ex">border-radius:</span> 0.25em<span class="kw">;</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="er">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Additionally, a <code>webexercises.qmd</code> file is created. This contains examples of the various different quizzes. I delete this.</p>
 
@@ -1078,8 +1173,8 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../qmds/code.html" class="pagination-link" aria-label="Code">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Code</span>
+      <a href="../qmds/tippy_tooltips.html" class="pagination-link" aria-label="Tippy tooltips">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Tippy tooltips</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

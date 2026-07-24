@@ -1,0 +1,15 @@
+{
+  "hash": "3ba8d0cfc5f6e31d71df7615246e051b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\n---\n# Videos\n\nYou can embed online hosted videos on a site.\nHere we show how to do this for youtube videos.\n\n## Embed code\n\nAdd the following code to where you want the URL to be embedded. Change the link to the embed link of your video.\n\n\n::: {.cell}\n\n```{.css .cell-code}\n<div class=\"container\">\n<iframe src=\"https://www.youtube.com/embed/U_RkeDVU2cg\" \nframeborder=\"0\" allowfullscreen class=\"video\"></iframe>\n</div>\n```\n\n\n<style type=\"text/css\">\n<div class=\"container\">\n<iframe src=\"https://www.youtube.com/embed/U_RkeDVU2cg\" \nframeborder=\"0\" allowfullscreen class=\"video\"></iframe>\n</div>\n</style>\n:::\n\n\n<div class=\"container\">\n<iframe src=\"https://www.youtube.com/embed/U_RkeDVU2cg\" \nframeborder=\"0\" allowfullscreen class=\"video\"></iframe>\n</div>\n\n## Styling\n\nTo ensure the video embed takes up the entire width of the page you can include the following in your [.scss files](/css/css.qmd).\n\n\n::: {.cell}\n\n```{.css .cell-code}\n.container {\n    position: relative;\n    width: 100%;\n    height: 0;\n    padding-bottom: 56.25%;\n}\n.video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n}\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -6,9 +6,10 @@ engine: knitr
 Callout out boxes are a nice way to signpost something.
 The below shows the callout boxes and the code that is included in the `.qmd` file to create them.
 
-There are four types.
+There are five types.
 
 - Note
+- Tip
 - Warning
 - Important
 - Caution
@@ -26,6 +27,19 @@ Code:
 ```{bash,eval=FALSE}
 ::: {.callout-note}
 This is a note.
+:::
+```
+
+## Tip
+
+::: {.callout-tip}
+Callout blocks are nice to alert people to certain information.
+:::
+
+Code:
+```{bash,eval=FALSE}
+::: {.callout-tip}
+Callout blocks are nice to alert people to certain information.
 :::
 ```
 

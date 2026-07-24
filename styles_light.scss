@@ -1,5 +1,6 @@
 // Light theme
 
+//Below line is required
 /*-- scss:defaults --*/
 
 // Import fonts
@@ -51,3 +52,22 @@ monofont {
   font-family: "Fira+Mono";
 }
 
+// Tippy tooltips
+.tippy-tooltip {
+  font-size: 16px;
+  padding: 3px 5px;
+}
+// Embed videos
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

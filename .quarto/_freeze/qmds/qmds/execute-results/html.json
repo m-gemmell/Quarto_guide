@@ -1,0 +1,15 @@
+{
+  "hash": "29938375a24980ce03d3d559e664ad28",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\n---\n\n# qmd files\n\nQuarto uses `.qmd` which are essentially markdown files (.qmd = quarto markdown).\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

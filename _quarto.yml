@@ -1,6 +1,7 @@
 project:
   type: website
-editor: source
+editor:
+  render-on-save: true
 #Website
 website:
   ## Turn Breadcrumbs off
@@ -67,11 +68,17 @@ website:
       align: left
       contents:
       - href: qmds/qmds.qmd
-      - href: qmds/callouts.qmd
-      - section: "Interactivity"
+      - section: "Static"
+        contents:
+        - href: qmds/images.qmd
+        - href: qmds/callouts.qmd
+        - href: qmds/icons.qmd
+      - section: "Interactive"
         contents:
         - href: qmds/code.qmd
+        - href: qmds/tippy_tooltips.qmd
         - href: qmds/webexercises.qmd
+        - href: qmds/videos.qmd
     - id: css
       title: "css"
       style: "floating"
@@ -79,6 +86,10 @@ website:
       align: left
       contents:
       - href: css/css.qmd
+      - section: "Dark and Light"
+        contents:
+        - href: css/dark_scss.qmd
+        - href: css/light_scss.qmd
     - id: yml
       title: "yml"
       style: "floating"
@@ -110,4 +121,5 @@ format:
       dark: [darkly, styles_dark.scss]
       light: [styles_light.scss]
     mainfont: Lexend
+    code-overflow: wrap
     toc: true

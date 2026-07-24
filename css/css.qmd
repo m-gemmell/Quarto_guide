@@ -1,1 +1,18 @@
 # css
+
+CSS stands for Cascading STyle Sheets and is a language for styling HTML web pages as well other documents.
+
+I specifically use `.scss` files ([Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/)).
+They have all the functionality of css files but more to make it easier.
+
+## Files
+
+We have set a light and dark theme for this website.
+Therefore we use 2 scss files:
+
+- `styles_dark.scss` for the dark theme
+- `styles_light.scss` for the light theme
+
+These are designated in the [format segment of our `_quarto.yml` file](/yml/format.qmd).
+
+

@@ -1,8 +1,10 @@
+---
+engine: knitr
+---
+
 # qmd files
 
 Quarto uses `.qmd` which are essentially markdown files (.qmd = quarto markdown).
-
-
 
 
 

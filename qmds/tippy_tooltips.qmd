@@ -1,0 +1,151 @@
+# Tippy tooltips
+
+You can add tooltips into R markdown with the [Tippy R package](https://tippy.john-coene.com/) which uses [Tippy.js](https://atomiks.github.io/tippyjs/).
+
+## Tooltips
+
+A tooltip is text that appears when you hover your mouse over an item such as text.
+Text with tooltips are signified by being underlined.
+Hover your cursor over the below text to see and example.
+
+<u id='word'>Text</u> 
+
+```{r, echo=FALSE}
+#Tippy tooltips
+tippy::tippy_this(elementId = "word", 
+                  tooltip = "This is the tooltip text",
+                  arrow = TRUE, placement = "bottom")
+```
+
+## Code
+
+A tool tips needs 2 bits of "code". 
+The html code in the text and the R code to create the tippy tooltip.
+
+### Text and HTML
+
+The first is the inline HTML code to denote which word has which tooltip.
+This is shown below where we flank our word (`Text`) with html elements.
+These elements:
+
+- Underline our text `<u><\u>`
+- Specify the tippy tooltip to use `id='word'`
+
+````{verbatim}
+<u id='word'>Text</u> 
+````
+
+::: {.callout-note title="Tooltip location"}
+Tippy tooltips can be placed anywhere in a sentence like <u id='here'>here</u>  or <u id='here2'>here</u>.
+:::
+
+```{r, echo=FALSE}
+#Tippy tooltips
+tippy::tippy_this(elementId = "here", 
+                  tooltip = "This is word has a tooltip",
+                  arrow = TRUE, 
+                  placement = "bottom")
+tippy::tippy_this(elementId = "here2", 
+                  tooltip = "This word also has a tooltip",
+                  arrow = TRUE, 
+                  placement = "bottom")
+```
+
+### Tooltips creation through R
+
+The second bit of code is creating the tooltip.
+As this is R we create this in an R code block and set `echo=FALSE` so the code is not shown in the page.
+
+
+````{verbatim}
+```{r, echo=FALSE}
+#Tippy tooltips
+tippy::tippy_this(elementId = "word", 
+                  tooltip = "This is the tooltip text",
+                  arrow = TRUE, 
+                  placement = "bottom")
+```
+````
+
+
+The options of the function are:
+
+- `elementId`: Element to add the tooltip to via its ID. 
+- `tooltip`: Text to include in the tooltip.
+- `arrow`: Specifies if the tooltip will have an arrow pointing to the text the tooltip refers to.
+- `placement`: Placement of the tooltip relative to the text the tooltip refers to.
+
+Other options are available for `tippy:tippy_this()` based on [Tippy.js props](https://atomiks.github.io/tippyjs/v6/all-props/).
+For an example see how `arrow=` is used above compared to the [Tippy.js arrow prop](https://atomiks.github.io/tippyjs/v6/all-props/#arrow).
+
+::: {.callout-note title="R code location"}
+The R code for creating the tippy tooltip
+:::
+
+## CSS
+
+I would suggest adding the following to your [__styles_light.css__ and __styles_dark.scss__](/css/css.qmd) file to increase the text and box size of the tooltip.
+
+```{css, eval=FALSE}
+.tippy-tooltip {
+  font-size: 16px;
+  padding: 3px 5px;
+}
+```
+
+## Multilpe instances
+
+You can have 
+<u id='multiple'>multiple</u> 
+tooltips in one 
+<u id='paragraph'>paragraph</u> 
+. You can even use the same tooltip 
+<u id='multiple'>multiple</u>  
+times but you only need one `tippy_this()` call for each ID.
+
+However, you must have each `tippy_this()` call needed for each __.qmd__ page on each relevant page.
+I suggest having one code block with all required `tippy_this()` calls for the required page at the bottom of that page.
+
+```{r, echo=FALSE}
+#Tippy tooltips
+tippy::tippy_this(elementId = "multiple", 
+                  tooltip = "More than one",
+                  arrow = TRUE, placement = "bottom")
+tippy::tippy_this(elementId = "paragraph", 
+                  tooltip = "a distinct section of a piece of writing",
+                  arrow = TRUE, placement = "bottom")
+```
+
+Markdown text for above:
+
+````{verbatim}
+You can have 
+<u id='multiple'>multiple</u> 
+tooltips in one 
+<u id='paragraph'>paragraph</u> 
+. You can even use the same tooltip 
+<u id='multiple'>multiple</u>  
+times but only needing one `tippy_this()` call for each ID.
+
+However, you must have each `tippy_this()` call needed for each __.Rmd__ page on each relevant page.
+I suggest having one code block with all required `tippy_this()` 
+calls for the required page at the bottom of that page.
+````
+
+R code for above:
+
+````{verbatim}
+```{r, echo=FALSE}
+#Tippy tooltips
+tippy::tippy_this(elementId = "multiple", 
+                  tooltip = "More than one",
+                  arrow = TRUE, placement = "bottom")
+tippy::tippy_this(elementId = "paragraph", 
+                  tooltip = "a distinct section of a piece of writing",
+                  arrow = TRUE, placement = "bottom")
+```
+````
+
+## Package install
+
+See install instructions in the [setup page](/setup/setup.qmd#r-package-installs). 

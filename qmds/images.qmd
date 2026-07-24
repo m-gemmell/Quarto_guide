@@ -1,0 +1,43 @@
+---
+engine: knitr
+---
+# Images
+
+The below HTML code displays the image below it.
+
+```{bash, eval=FALSE}
+![](/images/quarto_quarters.png){style="width:200px" fig-align="center"}
+```
+
+<center>
+![](/images/quarto_quarters.png){style="width:200px"}
+</center>
+
+You can customise the display with various parts.
+Common inclusions for me are:
+
+```{bash, eval=FALSE}
+![](/images/quarto_quarters.png){style="width:200px; border-radius:5px; background:white; border: white solid 5px" fig-align="center"}
+```
+
+![](/images/quarto_quarters.png){style="width:200px; border-radius:5px; background:white; border: white solid 5px" fig-align="center"}
+
+
+The various options included above are:
+
+- `style=`: Various style options
+    - `width:`: sets maximum width of image 
+        - Max width of our site's main are is 1000px, see [yml format](/yml/format.qmd)
+        - Useful to do this way so images don't become tiny on a mobile phone.
+        - If the width of the page is smaller than the set width it will interactively set the image to 100%
+    - `border-radius:` adds curved corners, good for images with cornered background
+        - 5px to 15px is generally a good range
+    - `background:` sets the background colour
+    - `border:` sets the colour style and thickness of a border
+        - These three options can be in any order
+- `fig-align=` sets the alignment of the image
+
+Tips:
+
+- You can use hexadecimals for colours (e.g. #111111)
+- Ensure you have the `;` between the different options in `style=""`

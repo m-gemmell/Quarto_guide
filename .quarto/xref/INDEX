@@ -43,5 +43,26 @@
   },
   "yml/website_options.qmd": {
     "website_options.html": "0a177985"
+  },
+  "yml/editor.qmd": {
+    "editor.html": "43e45adb"
+  },
+  "qmds/images.qmd": {
+    "images.html": "1648df46"
+  },
+  "qmds/tippy_tooltips.qmd": {
+    "tippy_tooltips.html": "519bbb93"
+  },
+  "qmds/icons.qmd": {
+    "icons.html": "045f67e4"
+  },
+  "qmds/videos.qmd": {
+    "videos.html": "457ba014"
+  },
+  "css/dark_scss.qmd": {
+    "dark_scss.html": "f5d41af7"
+  },
+  "css/light_scss.qmd": {
+    "light_scss.html": "79600e55"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "hash": "5ea47deaa76123ad7f3362e586c9c3c2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nengine: knitr\n---\n# Images\n\nThe below HTML code displays the image below it.\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n![](/images/quarto_quarters.png){style=\"width:200px\" fig-align=\"center\"}\n```\n:::\n\n\n<center>\n![](/images/quarto_quarters.png){style=\"width:200px\"}\n</center>\n\nYou can customise the display with various parts.\nCommon inclusions for me are:\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n![](/images/quarto_quarters.png){style=\"width:200px; border-radius:5px; background:white; border: white solid 5px\" fig-align=\"center\"}\n```\n:::\n\n\n![](/images/quarto_quarters.png){style=\"width:200px; border-radius:5px; background:white; border: white solid 5px\" fig-align=\"center\"}\n\n\nThe various options included above are:\n\n- `style=`: Various style options\n    - `width:`: sets maximum width of image \n        - Max width of our site's main are is 1000px, see [yml format](/yml/format.qmd)\n        - Useful to do this way so images don't become tiny on a mobile phone.\n        - If the width of the page is smaller than the set width it will interactively set the image to 100%\n    - `border-radius:` adds curved corners, good for images with cornered background\n        - 5px to 15px is generally a good range\n    - `background:` sets the background colour\n    - `border:` sets the colour style and thickness of a border\n        - These three options can be in any order\n- `fig-align=` sets the alignment of the image\n\nTips:\n\n- You can use hexadecimals for colours (e.g. #111111)\n- Ensure you have the `;` between the different options in `style=\"\"`\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

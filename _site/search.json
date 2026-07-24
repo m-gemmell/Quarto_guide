@@ -35,7 +35,7 @@
     "href": "css/css.html",
     "title": "css",
     "section": "",
-    "text": "css",
+    "text": "CSS stands for Cascading STyle Sheets and is a language for styling HTML web pages as well other documents.\nI specifically use .scss files (Sass: Syntactically Awesome Style Sheets). They have all the functionality of css files but more to make it easier.\n\n\nWe have set a light and dark theme for this website. Therefore we use 2 scss files:\n\nstyles_dark.scss for the dark theme\nstyles_light.scss for the light theme\n\nThese are designated in the format segment of our _quarto.yml file.",
     "crumbs": [
       "css"
     ]
@@ -45,7 +45,7 @@
     "href": "index.html",
     "title": "Overview",
     "section": "",
-    "text": "The following website contains a quick guide/cookbook for creating websites with quarto.",
+    "text": "The following website contains a quick guide/cookbook for creating websites with quarto.\n\n\nOnce you have created your various quarto files you can create your website’s html files with the following command in bash.\n\nquarto preview\n\n\n\n\n\n\n\nNote\n\n\n\nEnsue you are in the main directory of your quarto project when running the above.\n\n\nWhen you run the above it will create the files but also open a preview of the website in a browser. With the render-on-save: true in our _quarto.yml file the preview will update as you save changes in your files. However, this seems to be a bit consistent, to force the preview to update go to your _quart.yml file and save it. You can do this even if their are no changes to the _quarto.yml to save.\nYou can host your html files through various means. I use the free service GitHub pages.\n\n\n\nThe various parts, sections, and pages of this website provide a quick guide and resources for creating a quarto website. These include:\n\nSetup: Setting up quarto, VScode, and a quarto website project\n\nAlso includes install instructions for the various R packages described in this website\n\nqmd: Writing .qmd files with markdown\ncss: Setting the website theme, and the text font & colour\n\nThis shows the use of .scss files (Sass: Syntactically Awesome Style Sheets)\n\nyml: Setting the format, structure, and other global options for the website\n\n\n\n\nOther resources include:\n\nMain Quarto website\nQuarto: The practical Guide",
     "crumbs": [
       "Overview"
     ]
@@ -55,10 +55,10 @@
     "href": "qmds/webexercises.html",
     "title": "Webexercises",
     "section": "",
-    "text": "webexercises is an R package that allows you to include interactive quizzes in quarto markdown (.qmd) and R markdown (.rmd) created html pages.\n\n\nInstall through R with:\n\ninstall.packages(\"webexercises\")\n\n\n\n\nOpen the main directory of your quarto site (directory that contains the index.qmd and _quarto.yml). Run the following command in an R terminal:\n\nlibrary(\"webexercises\")\nwebexercises::add_to_quarto()\n\nThis will add the following:\nA webex.css and webex.js in an include directory. For a nice MCQ presentation i change the .webex-radiogroup label in webex.css to:\n\n.webex-radiogroup label {\n  /*Text colour*/\n  color: : #aaaaaa;\n  margin-left: 2em;\n  margin-bottom: 0.25em;\n  text-indent: -1em;\n  padding-left: 0.5em;\n  font-weight: 400;\n  display: block;\n  /*Set border of text to solid and dark grey*/\n  border: 2px solid #808080;\n  border-radius: 0.25em;\n}\n\nAdditionally, a webexercises.qmd file is created. This contains examples of the various different quizzes. I delete this.",
+    "text": "webexercises is an R package that allows you to include interactive quizzes in quarto markdown (.qmd) and R markdown (.Rmd) created html pages.\nThis page includes:\n\nMCQ examples & template\nExpandable box example/template\nInstallation\nInitialisation for your quarto project\n\nThere are other widgets that I don’t find use for in the webexercises website.",
     "crumbs": [
       "qmd",
-      "Interactivity",
+      "Interactive",
       "Webexercises"
     ]
   },
@@ -66,11 +66,11 @@
     "objectID": "qmds/webexercises.html#install",
     "href": "qmds/webexercises.html#install",
     "title": "Webexercises",
-    "section": "",
-    "text": "Install through R with:\n\ninstall.packages(\"webexercises\")",
+    "section": "Install",
+    "text": "Install\nSee install instruction in the setup page.",
     "crumbs": [
       "qmd",
-      "Interactivity",
+      "Interactive",
       "Webexercises"
     ]
   },
@@ -78,11 +78,11 @@
     "objectID": "qmds/webexercises.html#initialise",
     "href": "qmds/webexercises.html#initialise",
     "title": "Webexercises",
-    "section": "",
-    "text": "Open the main directory of your quarto site (directory that contains the index.qmd and _quarto.yml). Run the following command in an R terminal:\n\nlibrary(\"webexercises\")\nwebexercises::add_to_quarto()\n\nThis will add the following:\nA webex.css and webex.js in an include directory. For a nice MCQ presentation i change the .webex-radiogroup label in webex.css to:\n\n.webex-radiogroup label {\n  /*Text colour*/\n  color: : #aaaaaa;\n  margin-left: 2em;\n  margin-bottom: 0.25em;\n  text-indent: -1em;\n  padding-left: 0.5em;\n  font-weight: 400;\n  display: block;\n  /*Set border of text to solid and dark grey*/\n  border: 2px solid #808080;\n  border-radius: 0.25em;\n}\n\nAdditionally, a webexercises.qmd file is created. This contains examples of the various different quizzes. I delete this.",
+    "section": "Initialise",
+    "text": "Initialise\nOpen the main directory of your quarto site (directory that contains the index.qmd and _quarto.yml). Run the following command in an R terminal:\n\nlibrary(\"webexercises\")\nwebexercises::add_to_quarto()\n\nThis will add the following:\nA webex.css and webex.js in an include directory. For a nice MCQ presentation i change the .webex-radiogroup label in webex.css to:\n\n.webex-radiogroup label {\n  /*Text colour*/\n  color: : #aaaaaa;\n  margin-left: 2em;\n  margin-bottom: 0.25em;\n  text-indent: -1em;\n  padding-left: 0.5em;\n  font-weight: 400;\n  display: block;\n  /*Set border of text to solid and dark grey*/\n  border: 2px solid #808080;\n  border-radius: 0.25em;\n}\n\nAdditionally, a webexercises.qmd file is created. This contains examples of the various different quizzes. I delete this.",
     "crumbs": [
       "qmd",
-      "Interactivity",
+      "Interactive",
       "Webexercises"
     ]
   },
@@ -118,7 +118,7 @@
     "text": "You can include bash and python code.\nIf you in do you will unfrintunately need the below code at the top of each .qmd page that contains non R code. You need this even if you set eval=FALSE.\n\n---\nengine: knitr\n---",
     "crumbs": [
       "qmd",
-      "Interactivity",
+      "Interactive",
       "Code"
     ]
   },
@@ -130,7 +130,7 @@
     "text": "You can include bash and python code.\nIf you in do you will unfrintunately need the below code at the top of each .qmd page that contains non R code. You need this even if you set eval=FALSE.\n\n---\nengine: knitr\n---",
     "crumbs": [
       "qmd",
-      "Interactivity",
+      "Interactive",
       "Code"
     ]
   },
@@ -139,9 +139,10 @@
     "href": "qmds/callouts.html",
     "title": "Callouts",
     "section": "",
-    "text": "Callout out boxes are a nice way to signpost something. The below shows the callout boxes and the code that is included in the .qmd file to create them.\nThere are four types.\n\nNote\nWarning\nImportant\nCaution\n\nYou can also include titles or make them collapsible.\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis is a note.\n\n\nCode:\n\n::: {.callout-note}\nThis is a note.\n:::\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nSmoking leads to coughing\n\n\nCode:\n\n::: {.callout-warning}\nSmoking leads to coughing\n:::\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to breath when stretching\n\n\nCode:\n\n::: {.callout-important}\nRemember to breath when stretching\n:::\n\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nDon’t get stuck in the circular loop of the next callout block\n\n\nCode:\n\n::: {.callout-caution}\nDon't get stuck in the circular loops of the next callout blocks\n:::\n\n\n\n\nYou can specify the title of a callout block.\n\n\n\n\n\n\nNoteRead the note below\n\n\n\nRead the title above\n\n\nCode:\n\n::: {.callout-note title=\"Read the note below\"}\nRead the title above\n:::\n\n\n\n\nYou can make a callout block collapsible.\nSet collapse=\"false\" to make the block collapsible but not collapsed by default.\n\n\n\n\n\n\nWarning\n\n\n\n\n\nHunger leads to eating\n\n\n\n\n::: {.callout-warning collapse=\"false}\nHunger leads to eating\n:::\n\nSet collapse=\"TRUE\" to make the collapsible block collapsed by default. Of course you can also add a title.\n\n\n\n\n\n\nImportantExpand this collapsible block\n\n\n\n\n\nCollapse this expanded block\n\n\n\n\n::: {.callout-important collapse=\"true\" title=\"Expand this collapsible block\"}\nCollapse this expanded block\n:::",
+    "text": "Callout out boxes are a nice way to signpost something. The below shows the callout boxes and the code that is included in the .qmd file to create them.\nThere are five types.\n\nNote\nTip\nWarning\nImportant\nCaution\n\nYou can also include titles or make them collapsible.\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis is a note.\n\n\nCode:\n\n::: {.callout-note}\nThis is a note.\n:::\n\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nCallout blocks are nice to alert people to certain information.\n\n\nCode:\n\n::: {.callout-tip}\nCallout blocks are nice to alert people to certain information.\n:::\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\n\nSmoking leads to coughing\n\n\nCode:\n\n::: {.callout-warning}\nSmoking leads to coughing\n:::\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nRemember to breath when stretching\n\n\nCode:\n\n::: {.callout-important}\nRemember to breath when stretching\n:::\n\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nDon’t get stuck in the circular loop of the next callout block\n\n\nCode:\n\n::: {.callout-caution}\nDon't get stuck in the circular loops of the next callout blocks\n:::\n\n\n\n\nYou can specify the title of a callout block.\n\n\n\n\n\n\nNoteRead the note below\n\n\n\nRead the title above\n\n\nCode:\n\n::: {.callout-note title=\"Read the note below\"}\nRead the title above\n:::\n\n\n\n\nYou can make a callout block collapsible.\nSet collapse=\"false\" to make the block collapsible but not collapsed by default.\n\n\n\n\n\n\nWarning\n\n\n\n\n\nHunger leads to eating\n\n\n\n\n::: {.callout-warning collapse=\"false}\nHunger leads to eating\n:::\n\nSet collapse=\"TRUE\" to make the collapsible block collapsed by default. Of course you can also add a title.\n\n\n\n\n\n\nImportantExpand this collapsible block\n\n\n\n\n\nCollapse this expanded block\n\n\n\n\n::: {.callout-important collapse=\"true\" title=\"Expand this collapsible block\"}\nCollapse this expanded block\n:::",
     "crumbs": [
       "qmd",
+      "Static",
       "Callouts"
     ]
   },
@@ -246,8 +247,8 @@
     "objectID": "index.html#authoring-a-website",
     "href": "index.html#authoring-a-website",
     "title": "Overview",
-    "section": "Authoring a website",
-    "text": "Authoring a website\nOnce you have created your various quarto files you can create your website’s html files with the following command in bash.\n\nquarto preview\n\n\n\n\n\n\n\nNote\n\n\n\nEnsue you are in the main directory of your quarto project when running the above.\n\n\nYou can host your html files through various means. I use the free service GitHub pages.",
+    "section": "",
+    "text": "Once you have created your various quarto files you can create your website’s html files with the following command in bash.\n\nquarto preview\n\n\n\n\n\n\n\nNote\n\n\n\nEnsue you are in the main directory of your quarto project when running the above.\n\n\nWhen you run the above it will create the files but also open a preview of the website in a browser. With the render-on-save: true in our _quarto.yml file the preview will update as you save changes in your files. However, this seems to be a bit consistent, to force the preview to update go to your _quart.yml file and save it. You can do this even if their are no changes to the _quarto.yml to save.\nYou can host your html files through various means. I use the free service GitHub pages.",
     "crumbs": [
       "Overview"
     ]
@@ -256,8 +257,8 @@
     "objectID": "index.html#further-resources",
     "href": "index.html#further-resources",
     "title": "Overview",
-    "section": "Further resources",
-    "text": "Further resources\nOther resources include:\n\nMain Quarto website\nQuarto: The practical Guide",
+    "section": "",
+    "text": "Other resources include:\n\nMain Quarto website\nQuarto: The practical Guide",
     "crumbs": [
       "Overview"
     ]
@@ -266,8 +267,8 @@
     "objectID": "index.html#creating-quarto-files",
     "href": "index.html#creating-quarto-files",
     "title": "Overview",
-    "section": "Creating quarto files",
-    "text": "Creating quarto files\nThe various parts, sections, and pages of this website provide a quick guide and resources for creating a quarto website. These include:\n\nSetup: Setting up quarto, VScode, and a quarto website project\nqmd: Writing .qmd files with markdown\ncss: Setting the website theme, and the text font & colour\n\nThis shows the use of .scss files (Sass: Syntactically Awesome Style Sheets)\n\nyml: Setting the format, structure, and other global options for the website",
+    "section": "",
+    "text": "The various parts, sections, and pages of this website provide a quick guide and resources for creating a quarto website. These include:\n\nSetup: Setting up quarto, VScode, and a quarto website project\n\nAlso includes install instructions for the various R packages described in this website\n\nqmd: Writing .qmd files with markdown\ncss: Setting the website theme, and the text font & colour\n\nThis shows the use of .scss files (Sass: Syntactically Awesome Style Sheets)\n\nyml: Setting the format, structure, and other global options for the website",
     "crumbs": [
       "Overview"
     ]
@@ -290,6 +291,7 @@
     "text": "Note\n\n\n\nThis is a note.\n\n\nCode:\n\n::: {.callout-note}\nThis is a note.\n:::",
     "crumbs": [
       "qmd",
+      "Static",
       "Callouts"
     ]
   },
@@ -301,6 +303,7 @@
     "text": "Warning\n\n\n\nSmoking leads to coughing\n\n\nCode:\n\n::: {.callout-warning}\nSmoking leads to coughing\n:::",
     "crumbs": [
       "qmd",
+      "Static",
       "Callouts"
     ]
   },
@@ -312,6 +315,7 @@
     "text": "Important\n\n\n\nRemember to breath when stretching\n\n\nCode:\n\n::: {.callout-important}\nRemember to breath when stretching\n:::",
     "crumbs": [
       "qmd",
+      "Static",
       "Callouts"
     ]
   },
@@ -323,6 +327,7 @@
     "text": "Caution\n\n\n\nDon’t get stuck in the circular loop of the next callout block\n\n\nCode:\n\n::: {.callout-caution}\nDon't get stuck in the circular loops of the next callout blocks\n:::",
     "crumbs": [
       "qmd",
+      "Static",
       "Callouts"
     ]
   },
@@ -334,6 +339,7 @@
     "text": "You can specify the title of a callout block.\n\n\n\n\n\n\nNoteRead the note below\n\n\n\nRead the title above\n\n\nCode:\n\n::: {.callout-note title=\"Read the note below\"}\nRead the title above\n:::",
     "crumbs": [
       "qmd",
+      "Static",
       "Callouts"
     ]
   },
@@ -345,6 +351,7 @@
     "text": "You can make a callout block collapsible.\nSet collapse=\"false\" to make the block collapsible but not collapsed by default.\n\n\n\n\n\n\nWarning\n\n\n\n\n\nHunger leads to eating\n\n\n\n\n::: {.callout-warning collapse=\"false}\nHunger leads to eating\n:::\n\nSet collapse=\"TRUE\" to make the collapsible block collapsed by default. Of course you can also add a title.\n\n\n\n\n\n\nImportantExpand this collapsible block\n\n\n\n\n\nCollapse this expanded block\n\n\n\n\n::: {.callout-important collapse=\"true\" title=\"Expand this collapsible block\"}\nCollapse this expanded block\n:::",
     "crumbs": [
       "qmd",
+      "Static",
       "Callouts"
     ]
   },
@@ -357,6 +364,320 @@
     "crumbs": [
       "qmd",
       "Callouts"
+    ]
+  },
+  {
+    "objectID": "qmds/qmds.html#images",
+    "href": "qmds/qmds.html#images",
+    "title": "qmd files",
+    "section": "",
+    "text": "The below HTML code displays the image below it.\n\n![](/images/quarto_quarters.png){style=\"width:200px\" fig-align=\"center\"}\n\n\n\n\nYou can customise the display with various parts. Common inclusions for me are:\n\n![](/images/quarto_quarters.png){style=\"width:200px; border-radius:5px; background:white; border: white solid 5px\" fig-align=\"center\"}",
+    "crumbs": [
+      "qmd",
+      "qmd files"
+    ]
+  },
+  {
+    "objectID": "yml/editor.html",
+    "href": "yml/editor.html",
+    "title": "Editor",
+    "section": "",
+    "text": "Editor"
+  },
+  {
+    "objectID": "qmds/images.html",
+    "href": "qmds/images.html",
+    "title": "Images",
+    "section": "",
+    "text": "Images\nThe below HTML code displays the image below it.\n\n![](/images/quarto_quarters.png){style=\"width:200px\" fig-align=\"center\"}\n\n\n\n\nYou can customise the display with various parts. Common inclusions for me are:\n\n![](/images/quarto_quarters.png){style=\"width:200px; border-radius:5px; background:white; border: white solid 5px\" fig-align=\"center\"}\n\n\n\n\n\n\nThe various options included above are:\n\nstyle=: Various style options\n\nwidth:: sets maximum width of image\n\nMax width of our site’s main are is 1000px, see yml format\nUseful to do this way so images don’t become tiny on a mobile phone.\nIf the width of the page is smaller than the set width it will interactively set the image to 100%\n\nborder-radius: adds curved corners, good for images with cornered background\n\n5px to 15px is generally a good range\n\nbackground: sets the background colour\nborder: sets the colour style and thickness of a border\n\nThese three options can be in any order\n\n\nfig-align= sets the alignment of the image\n\nTips:\n\nYou can use hexadecimals for colours (e.g. #111111)\nEnsure you have the ; between the different options in style=\"\"",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Images"
+    ]
+  },
+  {
+    "objectID": "qmds/tippy_tooltips.html",
+    "href": "qmds/tippy_tooltips.html",
+    "title": "Tippy tooltips",
+    "section": "",
+    "text": "You can add tooltips into R markdown with the Tippy R package which uses Tippy.js.\n\n\nA tooltip is text that appears when you hover your mouse over an item such as text. Text with tooltips are signified by being underlined. Hover your cursor over the below text to see and example.\nText\n\n\n\n\n\n\n\n\n\nA tool tips needs 2 bits of “code”. The html code in the text and the R code to create the tippy tooltip.\n\n\nThe first is the inline HTML code to denote which word has which tooltip. This is shown below where we flank our word (Text) with html elements. These elements:\n\nUnderline our text &lt;u&gt;&lt;\\u&gt;\nSpecify the tippy tooltip to use id='word'\n\n&lt;u id='word'&gt;Text&lt;/u&gt; \n\n\n\n\n\n\nNoteTooltip location\n\n\n\nTippy tooltips can be placed anywhere in a sentence like here or here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe second bit of code is creating the tooltip. As this is R we create this in an R code block and set echo=FALSE so the code is not shown in the page.\n```{r, echo=FALSE}\n#Tippy tooltips\ntippy::tippy_this(elementId = \"word\", \n                  tooltip = \"This is the tooltip text\",\n                  arrow = TRUE, \n                  placement = \"bottom\")\n```\nThe options of the function are:\n\nelementId: Element to add the tooltip to via its ID.\ntooltip: Text to include in the tooltip.\narrow: Specifies if the tooltip will have an arrow pointing to the text the tooltip refers to.\nplacement: Placement of the tooltip relative to the text the tooltip refers to.\n\nOther options are available for tippy:tippy_this() based on Tippy.js props. For an example see how arrow= is used above compared to the Tippy.js arrow prop.\n\n\n\n\n\n\nNoteR code location\n\n\n\nThe R code for creating the tippy tooltip\n\n\n\n\n\n\nI would suggest adding the following to your styles_light.css and styles_dark.scss file to increase the text and box size of the tooltip.\n\n.tippy-tooltip {\n  font-size: 16px;\n  padding: 3px 5px;\n}\n\n\n\n\nYou can have multiple tooltips in one paragraph . You can even use the same tooltip multiple\ntimes but you only need one tippy_this() call for each ID.\nHowever, you must have each tippy_this() call needed for each .qmd page on each relevant page. I suggest having one code block with all required tippy_this() calls for the required page at the bottom of that page.\n\n\n\n\n\n\n\n\n\n\nMarkdown text for above:\nYou can have \n&lt;u id='multiple'&gt;multiple&lt;/u&gt; \ntooltips in one \n&lt;u id='paragraph'&gt;paragraph&lt;/u&gt; \n. You can even use the same tooltip \n&lt;u id='multiple'&gt;multiple&lt;/u&gt;  \ntimes but only needing one `tippy_this()` call for each ID.\n\nHowever, you must have each `tippy_this()` call needed for each __.Rmd__ page on each relevant page.\nI suggest having one code block with all required `tippy_this()` \ncalls for the required page at the bottom of that page.\nR code for above:\n```{r, echo=FALSE}\n#Tippy tooltips\ntippy::tippy_this(elementId = \"multiple\", \n                  tooltip = \"More than one\",\n                  arrow = TRUE, placement = \"bottom\")\ntippy::tippy_this(elementId = \"paragraph\", \n                  tooltip = \"a distinct section of a piece of writing\",\n                  arrow = TRUE, placement = \"bottom\")\n```\n\n\n\nSee install instructions in the setup page.",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Tippy tooltips"
+    ]
+  },
+  {
+    "objectID": "qmds/webexercises.html#example",
+    "href": "qmds/webexercises.html#example",
+    "title": "Webexercises",
+    "section": "Example",
+    "text": "Example\nMCQ:\n\nQuestion?\n\n A1 A2 A3\n\n\nCode:\n```{r, echo = FALSE}\nopts_p &lt;- c(\"**A1**\", \"**A2**\", answer=\"**A3**\")\n```\n1. Question? `r longmcq(opts_p)`",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Webexercises"
+    ]
+  },
+  {
+    "objectID": "qmds/webexercises.html#template",
+    "href": "qmds/webexercises.html#template",
+    "title": "Webexercises",
+    "section": "template",
+    "text": "template\n```{r, echo = FALSE}\nopts_p &lt;- c(\"** **\", \"** **\", \"** **\")\n```\n`r longmcq(opts_p)`",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Webexercises"
+    ]
+  },
+  {
+    "objectID": "qmds/webexercises.html#expandable-box",
+    "href": "qmds/webexercises.html#expandable-box",
+    "title": "Webexercises",
+    "section": "Expandable box",
+    "text": "Expandable box\nExpandable box:\n\n\nTitle\n\nContents\n\nCode:\n\n`r hide(\"Title\")`\nContents\n`r unhide()`\n\nOptionally, you may want to use a callout block.\n\n\n\n\n\n\nNoteTitle\n\n\n\n\n\nContents\n\n\n\n\n::: {.callout-note collapse=\"true\" title=\"Title\"}\nContents\n:::",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Webexercises"
+    ]
+  },
+  {
+    "objectID": "qmds/tippy_tooltips.html#css",
+    "href": "qmds/tippy_tooltips.html#css",
+    "title": "Tippy tooltips",
+    "section": "",
+    "text": "I would suggest adding the following to your styles_light.css and styles_dark.scss file to increase the text and box size of the tooltip.\n\n.tippy-tooltip {\n  font-size: 16px;\n  padding: 3px 5px;\n}",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Tippy tooltips"
+    ]
+  },
+  {
+    "objectID": "qmds/tippy_tooltips.html#multilpe-instances",
+    "href": "qmds/tippy_tooltips.html#multilpe-instances",
+    "title": "Tippy tooltips",
+    "section": "",
+    "text": "You can have multiple tooltips in one paragraph . You can even use the same tooltip multiple\ntimes but you only need one tippy_this() call for each ID.\nHowever, you must have each tippy_this() call needed for each .qmd page on each relevant page. I suggest having one code block with all required tippy_this() calls for the required page at the bottom of that page.\n\n\n\n\n\n\n\n\n\n\nMarkdown text for above:\nYou can have \n&lt;u id='multiple'&gt;multiple&lt;/u&gt; \ntooltips in one \n&lt;u id='paragraph'&gt;paragraph&lt;/u&gt; \n. You can even use the same tooltip \n&lt;u id='multiple'&gt;multiple&lt;/u&gt;  \ntimes but only needing one `tippy_this()` call for each ID.\n\nHowever, you must have each `tippy_this()` call needed for each __.Rmd__ page on each relevant page.\nI suggest having one code block with all required `tippy_this()` \ncalls for the required page at the bottom of that page.\nR code for above:\n```{r, echo=FALSE}\n#Tippy tooltips\ntippy::tippy_this(elementId = \"multiple\", \n                  tooltip = \"More than one\",\n                  arrow = TRUE, placement = \"bottom\")\ntippy::tippy_this(elementId = \"paragraph\", \n                  tooltip = \"a distinct section of a piece of writing\",\n                  arrow = TRUE, placement = \"bottom\")\n```",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Tippy tooltips"
+    ]
+  },
+  {
+    "objectID": "qmds/tippy_tooltips.html#tooltips",
+    "href": "qmds/tippy_tooltips.html#tooltips",
+    "title": "Tippy tooltips",
+    "section": "",
+    "text": "A tooltip is text that appears when you hover your mouse over an item such as text. Text with tooltips are signified by being underlined. Hover your cursor over the below text to see and example.\nText",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Tippy tooltips"
+    ]
+  },
+  {
+    "objectID": "qmds/tippy_tooltips.html#code",
+    "href": "qmds/tippy_tooltips.html#code",
+    "title": "Tippy tooltips",
+    "section": "",
+    "text": "A tool tips needs 2 bits of “code”. The html code in the text and the R code to create the tippy tooltip.\n\n\nThe first is the inline HTML code to denote which word has which tooltip. This is shown below where we flank our word (Text) with html elements. These elements:\n\nUnderline our text &lt;u&gt;&lt;\\u&gt;\nSpecify the tippy tooltip to use id='word'\n\n&lt;u id='word'&gt;Text&lt;/u&gt; \n\n\n\n\n\n\nNoteTooltip location\n\n\n\nTippy tooltips can be placed anywhere in a sentence like here or here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe second bit of code is creating the tooltip. As this is R we create this in an R code block and set echo=FALSE so the code is not shown in the page.\n```{r, echo=FALSE}\n#Tippy tooltips\ntippy::tippy_this(elementId = \"word\", \n                  tooltip = \"This is the tooltip text\",\n                  arrow = TRUE, \n                  placement = \"bottom\")\n```\nThe options of the function are:\n\nelementId: Element to add the tooltip to via its ID.\ntooltip: Text to include in the tooltip.\narrow: Specifies if the tooltip will have an arrow pointing to the text the tooltip refers to.\nplacement: Placement of the tooltip relative to the text the tooltip refers to.\n\nOther options are available for tippy:tippy_this() based on Tippy.js props. For an example see how arrow= is used above compared to the Tippy.js arrow prop.\n\n\n\n\n\n\nNoteR code location\n\n\n\nThe R code for creating the tippy tooltip",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Tippy tooltips"
+    ]
+  },
+  {
+    "objectID": "setup/setup.html#r-package-installs",
+    "href": "setup/setup.html#r-package-installs",
+    "title": "Setup",
+    "section": "",
+    "text": "Their are various R packages that are shown for various functions in quarto. Below are the install instructions for them all.\n\n#Webexercises\ninstall.packages(\"webexercises\")\n#Tippy tooltips\ninstall.packages(\"tippy\")\n#Reticulate to allow use of python in knitr\ninstall.packages(\"reticulate\")\n#Icons, below code also included in that section in this guide\ninstall.packages(\"remotes\")\nremotes::install_github(\"mitchelloharawild/icons\")\n#Download icon sets\nicons::download_fontawesome()\nicons::download_ionicons()\nicons::download_bioicons()",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "qmds/tippy_tooltips.html#package-install",
+    "href": "qmds/tippy_tooltips.html#package-install",
+    "title": "Tippy tooltips",
+    "section": "",
+    "text": "See install instructions in the setup page.",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Tippy tooltips"
+    ]
+  },
+  {
+    "objectID": "qmds/icons.html",
+    "href": "qmds/icons.html",
+    "title": "Icons",
+    "section": "",
+    "text": "You can use Icons in your bookdown\nPackage site: https://github.com/mitchelloharawild/icons\n\n\n\n\n\n\nNote\n\n\n\nYou will only be able to use free icons.\n\n\n\n\nGenerally FOnt awesome is my first choice for most icons.\nThe below code can be used to add  . Colour chosen to work on Light and Dark styles.\n`r icons::icon_style(icons::fontawesome(\"rocket\", style=\"solid\"), fill = \"#648fff\")`\nTo add to text do like so:\nA compass \n(`r icons::icon_style(icons::fontawesome(\"compass\", style=\"solid\"), fill = \"#648fff\")`) \nis useful to find north.\nThis will produce:\nA compass ( ) is useful to find north.\n\n\n\n\n\n\nNote\n\n\n\nYou need to set the style fontawesome but not the below 2 icon sets. More info below in the Searching part and Fontawesome styles.\n\n\n\n\n\nIonicons is my second choice.\nThe below code can be used to add  .\n`r icons::icon_style(icons::ionicons(\"calculator\"), fill = \"#648fff\")`\n\n\n\nBioicons is good for biological icons.\nThe below code can be used to add                                                                                                            .\n`r icons::bioicons(\"dna-7\")`\n\n\n\nSearch for your icons via the following websites:\n\nFontawesome\nIonicons\nBioicons\n\nYou can check if the name will work with:\n\nicons::icon_find(\"rocket\")\n\n$`ionicons$rocket`\n&lt;svg viewBox=\"0 0 512 512\" style=\"height:1em;position:relative;display:inline-block;top:.1em;\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;path d=\"M328.85,156.79a26.69,26.69,0,1,0,18.88,7.81A26.6,26.6,0,0,0,328.85,156.79Z\"&gt;&lt;/path&gt;\n  &lt;path d=\"M477.44,50.06a.29.29,0,0,1,0-.09,20.4,20.4,0,0,0-15.13-15.3c-29.8-7.27-76.68.48-128.63,21.28-52.36,21-101.42,52-134.58,85.22A320.7,320.7,0,0,0,169.55,175c-22.33-1-42,2.18-58.57,9.41-57.74,25.41-74.23,90.44-78.62,117.14a25,25,0,0,0,27.19,29h.13L124,323.53c.08.82.17,1.57.24,2.26a34.36,34.36,0,0,0,9.9,20.72l31.39,31.41a34.27,34.27,0,0,0,20.71,9.91l2.15.23-7,64.24s0,.08,0,.13A25,25,0,0,0,206,480a25.25,25.25,0,0,0,4.15-.34C237,475.34,302,459.05,327.34,401c7.17-16.46,10.34-36.05,9.45-58.34a314.78,314.78,0,0,0,33.95-29.55c33.43-33.26,64.53-81.92,85.31-133.52C476.74,128.23,484.53,81,477.44,50.06ZM370.38,224.94a58.77,58.77,0,1,1,0-83.07A58.3,58.3,0,0,1,370.38,224.94Z\"&gt;&lt;/path&gt;\n  &lt;path d=\"M161.93,386.44a16,16,0,0,0-11,2.67c-6.39,4.37-12.81,8.69-19.29,12.9-13.11,8.52-28.79-6.44-21-20l12.15-21a16,16,0,0,0-15.16-24.91A61.25,61.25,0,0,0,72,353.56c-3.66,3.67-14.79,14.81-20.78,57.26A357.94,357.94,0,0,0,48,447.59,16,16,0,0,0,64,464h.4a359.87,359.87,0,0,0,36.8-3.2c42.47-6,53.61-17.14,57.27-20.8a60.49,60.49,0,0,0,17.39-35.74A16,16,0,0,0,161.93,386.44Z\"&gt;&lt;/path&gt;\n&lt;/svg&gt;\n\n$`fontawesome$solid$rocket`\n&lt;svg viewBox=\"0 0 512 512\" style=\"height:1em;position:relative;display:inline-block;top:.1em;\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;path d=\"M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z\"&gt;&lt;/path&gt;\n&lt;/svg&gt;\n\n\nYou get a bunch of text but the important lines are:\n$`ionicons$rocket`\nand\n$`fontawesome$solid$rocket`\nThis shows there is a rocket icon in ionicons and fontawesome.\nLet’s display them.\nIonicons:\n\n  \n\nCode:\n`r icons::icon_style(icons::ionicons(\"rocket\"), fill = \"#648fff\")`\nFontawesome:\n\n\n\nCode:\n`r icons::icon_style(icons::fontawesome(\"rocket\", style=\"solid\"), fill = \"#648fff\")`\n\n\n\nNotice in the search line for fontawesome we had the style (solid) between the set (fontawesome) and the icon (rocket). This is because fontawesome will have some icons with multiple styles. An example is circle.\n\nicons::icon_find(\"circle\")\n\n$`fontawesome$regular$circle`\n&lt;svg viewBox=\"0 0 512 512\" style=\"height:1em;position:relative;display:inline-block;top:.1em;\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;path d=\"M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z\"&gt;&lt;/path&gt;\n&lt;/svg&gt;\n\n$`fontawesome$solid$circle`\n&lt;svg viewBox=\"0 0 512 512\" style=\"height:1em;position:relative;display:inline-block;top:.1em;\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;path d=\"M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z\"&gt;&lt;/path&gt;\n&lt;/svg&gt;\n\n\nWe can display the solid and regular circle for fontawesome.\nSolid circle:\n\n\n\nCode:\n`r icons::icon_style(icons::fontawesome(\"circle\", style=\"solid\"), fill = \"#648fff\")`\nregular circle:\n\n\n\nCode:\n`r icons::icon_style(icons::fontawesome(\"circle\", style=\"regular\"), fill = \"#648fff\")`\n\n\n\nSee install and icon set download instructions in the setup page.",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Icons"
+    ]
+  },
+  {
+    "objectID": "qmds/icons.html#installing-icons",
+    "href": "qmds/icons.html#installing-icons",
+    "title": "Icons",
+    "section": "",
+    "text": "See install and icon set download instructions in the setup page.",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Icons"
+    ]
+  },
+  {
+    "objectID": "qmds/callouts.html#tip",
+    "href": "qmds/callouts.html#tip",
+    "title": "Callouts",
+    "section": "",
+    "text": "Tip\n\n\n\nCallout blocks are nice to alert people to certain information.\n\n\nCode:\n\n::: {.callout-tip}\nCallout blocks are nice to alert people to certain information.\n:::",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Callouts"
+    ]
+  },
+  {
+    "objectID": "qmds/icons.html#fontawesome",
+    "href": "qmds/icons.html#fontawesome",
+    "title": "Icons",
+    "section": "",
+    "text": "Generally FOnt awesome is my first choice for most icons.\nThe below code can be used to add  . Colour chosen to work on Light and Dark styles.\n`r icons::icon_style(icons::fontawesome(\"rocket\", style=\"solid\"), fill = \"#648fff\")`\nTo add to text do like so:\nA compass \n(`r icons::icon_style(icons::fontawesome(\"compass\", style=\"solid\"), fill = \"#648fff\")`) \nis useful to find north.\nThis will produce:\nA compass ( ) is useful to find north.\n\n\n\n\n\n\nNote\n\n\n\nYou need to set the style fontawesome but not the below 2 icon sets. More info below in the Searching part and Fontawesome styles.",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Icons"
+    ]
+  },
+  {
+    "objectID": "qmds/icons.html#ionicons",
+    "href": "qmds/icons.html#ionicons",
+    "title": "Icons",
+    "section": "",
+    "text": "Ionicons is my second choice.\nThe below code can be used to add  .\n`r icons::icon_style(icons::ionicons(\"calculator\"), fill = \"#648fff\")`",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Icons"
+    ]
+  },
+  {
+    "objectID": "qmds/icons.html#bioicons",
+    "href": "qmds/icons.html#bioicons",
+    "title": "Icons",
+    "section": "",
+    "text": "Bioicons is good for biological icons.\nThe below code can be used to add                                                                                                            .\n`r icons::bioicons(\"dna-7\")`",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Icons"
+    ]
+  },
+  {
+    "objectID": "qmds/icons.html#searching",
+    "href": "qmds/icons.html#searching",
+    "title": "Icons",
+    "section": "",
+    "text": "Search for your icons via the following websites:\n\nFontawesome\nIonicons\nBioicons\n\nYou can check if the name will work with:\n\nicons::icon_find(\"rocket\")\n\n$`ionicons$rocket`\n&lt;svg viewBox=\"0 0 512 512\" style=\"height:1em;position:relative;display:inline-block;top:.1em;\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;path d=\"M328.85,156.79a26.69,26.69,0,1,0,18.88,7.81A26.6,26.6,0,0,0,328.85,156.79Z\"&gt;&lt;/path&gt;\n  &lt;path d=\"M477.44,50.06a.29.29,0,0,1,0-.09,20.4,20.4,0,0,0-15.13-15.3c-29.8-7.27-76.68.48-128.63,21.28-52.36,21-101.42,52-134.58,85.22A320.7,320.7,0,0,0,169.55,175c-22.33-1-42,2.18-58.57,9.41-57.74,25.41-74.23,90.44-78.62,117.14a25,25,0,0,0,27.19,29h.13L124,323.53c.08.82.17,1.57.24,2.26a34.36,34.36,0,0,0,9.9,20.72l31.39,31.41a34.27,34.27,0,0,0,20.71,9.91l2.15.23-7,64.24s0,.08,0,.13A25,25,0,0,0,206,480a25.25,25.25,0,0,0,4.15-.34C237,475.34,302,459.05,327.34,401c7.17-16.46,10.34-36.05,9.45-58.34a314.78,314.78,0,0,0,33.95-29.55c33.43-33.26,64.53-81.92,85.31-133.52C476.74,128.23,484.53,81,477.44,50.06ZM370.38,224.94a58.77,58.77,0,1,1,0-83.07A58.3,58.3,0,0,1,370.38,224.94Z\"&gt;&lt;/path&gt;\n  &lt;path d=\"M161.93,386.44a16,16,0,0,0-11,2.67c-6.39,4.37-12.81,8.69-19.29,12.9-13.11,8.52-28.79-6.44-21-20l12.15-21a16,16,0,0,0-15.16-24.91A61.25,61.25,0,0,0,72,353.56c-3.66,3.67-14.79,14.81-20.78,57.26A357.94,357.94,0,0,0,48,447.59,16,16,0,0,0,64,464h.4a359.87,359.87,0,0,0,36.8-3.2c42.47-6,53.61-17.14,57.27-20.8a60.49,60.49,0,0,0,17.39-35.74A16,16,0,0,0,161.93,386.44Z\"&gt;&lt;/path&gt;\n&lt;/svg&gt;\n\n$`fontawesome$solid$rocket`\n&lt;svg viewBox=\"0 0 512 512\" style=\"height:1em;position:relative;display:inline-block;top:.1em;\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;path d=\"M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z\"&gt;&lt;/path&gt;\n&lt;/svg&gt;\n\n\nYou get a bunch of text but the important lines are:\n$`ionicons$rocket`\nand\n$`fontawesome$solid$rocket`\nThis shows there is a rocket icon in ionicons and fontawesome.\nLet’s display them.\nIonicons:\n\n  \n\nCode:\n`r icons::icon_style(icons::ionicons(\"rocket\"), fill = \"#648fff\")`\nFontawesome:\n\n\n\nCode:\n`r icons::icon_style(icons::fontawesome(\"rocket\", style=\"solid\"), fill = \"#648fff\")`",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Icons"
+    ]
+  },
+  {
+    "objectID": "qmds/icons.html#fontawesome-styles",
+    "href": "qmds/icons.html#fontawesome-styles",
+    "title": "Icons",
+    "section": "",
+    "text": "Notice in the search line for fontawesome we had the style (solid) between the set (fontawesome) and the icon (rocket). This is because fontawesome will have some icons with multiple styles. An example is circle.\n\nicons::icon_find(\"circle\")\n\n$`fontawesome$regular$circle`\n&lt;svg viewBox=\"0 0 512 512\" style=\"height:1em;position:relative;display:inline-block;top:.1em;\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;path d=\"M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200z\"&gt;&lt;/path&gt;\n&lt;/svg&gt;\n\n$`fontawesome$solid$circle`\n&lt;svg viewBox=\"0 0 512 512\" style=\"height:1em;position:relative;display:inline-block;top:.1em;\" xmlns=\"http://www.w3.org/2000/svg\"&gt;\n  &lt;path d=\"M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z\"&gt;&lt;/path&gt;\n&lt;/svg&gt;\n\n\nWe can display the solid and regular circle for fontawesome.\nSolid circle:\n\n\n\nCode:\n`r icons::icon_style(icons::fontawesome(\"circle\", style=\"solid\"), fill = \"#648fff\")`\nregular circle:\n\n\n\nCode:\n`r icons::icon_style(icons::fontawesome(\"circle\", style=\"regular\"), fill = \"#648fff\")`",
+    "crumbs": [
+      "qmd",
+      "Static",
+      "Icons"
+    ]
+  },
+  {
+    "objectID": "qmds/videos.html",
+    "href": "qmds/videos.html",
+    "title": "Videos",
+    "section": "",
+    "text": "You can embed online hosted videos on a site. Here we show how to do this for youtube videos.\n\n\nAdd the following code to where you want the URL to be embedded. Change the link to the embed link of your video.\n\n&lt;div class=\"container\"&gt;\n&lt;iframe src=\"https://www.youtube.com/embed/U_RkeDVU2cg\" \nframeborder=\"0\" allowfullscreen class=\"video\"&gt;&lt;/iframe&gt;\n&lt;/div&gt;\n\n\n\n\n\n\n\n\n\nTo ensure the video embed takes up the entire width of the page you can include the following in your .scss files.\n\n.container {\n    position: relative;\n    width: 100%;\n    height: 0;\n    padding-bottom: 56.25%;\n}\n.video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n}",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Videos"
+    ]
+  },
+  {
+    "objectID": "qmds/videos.html#embed-code",
+    "href": "qmds/videos.html#embed-code",
+    "title": "Videos",
+    "section": "",
+    "text": "Add the following code to where you want the URL to be embedded. Change the link to the embed link of your video.\n\n&lt;div class=\"container\"&gt;\n&lt;iframe src=\"https://www.youtube.com/embed/U_RkeDVU2cg\" \nframeborder=\"0\" allowfullscreen class=\"video\"&gt;&lt;/iframe&gt;\n&lt;/div&gt;",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Videos"
+    ]
+  },
+  {
+    "objectID": "qmds/videos.html#styling",
+    "href": "qmds/videos.html#styling",
+    "title": "Videos",
+    "section": "",
+    "text": "To ensure the video embed takes up the entire width of the page you can include the following in your .scss files.\n\n.container {\n    position: relative;\n    width: 100%;\n    height: 0;\n    padding-bottom: 56.25%;\n}\n.video {\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n}",
+    "crumbs": [
+      "qmd",
+      "Interactive",
+      "Videos"
+    ]
+  },
+  {
+    "objectID": "css/css.html#files",
+    "href": "css/css.html#files",
+    "title": "css",
+    "section": "",
+    "text": "We have set a light and dark theme for this website. Therefore we use 2 scss files:\n\nstyles_dark.scss for the dark theme\nstyles_light.scss for the light theme\n\nThese are designated in the format segment of our _quarto.yml file.",
+    "crumbs": [
+      "css"
+    ]
+  },
+  {
+    "objectID": "css/light_scss.html",
+    "href": "css/light_scss.html",
+    "title": "Light scss",
+    "section": "",
+    "text": "Light scss",
+    "crumbs": [
+      "css",
+      "Dark and Light",
+      "Light scss"
+    ]
+  },
+  {
+    "objectID": "css/dark_scss.html",
+    "href": "css/dark_scss.html",
+    "title": "Dark scss",
+    "section": "",
+    "text": "Dark scss",
+    "crumbs": [
+      "css",
+      "Dark and Light",
+      "Dark scss"
     ]
   }
 ]

@@ -1,14 +1,74 @@
 # Webexercises
 
-[`webexercises`](https://debruine.github.io/webexercises/) is an R package that allows you to include interactive quizzes in quarto markdown (`.qmd`) and R markdown (`.rmd`) created html pages. 
+[`webexercises`](https://debruine.github.io/webexercises/) is an R package that allows you to include interactive quizzes in quarto markdown (`.qmd`) and R markdown (`.Rmd`) created html pages. 
+
+This page includes:
+
+- MCQ examples & template
+- Expandable box example/template
+- Installation
+- Initialisation for your quarto project
+
+There are other widgets that I don't find use for in the [webexercises website](https://psyteachr.github.io/webexercises/articles/webexercises.html).
+
+# MCQs
+
+## Example
+
+MCQ:
+
+```{r, echo = FALSE}
+opts_p <- c("**A1**", "**A2**", answer="**A3**")
+```
+1. Question? `r longmcq(opts_p)`
+
+Code:
+
+````{verbatim}
+```{r, echo = FALSE}
+opts_p <- c("**A1**", "**A2**", answer="**A3**")
+```
+1. Question? `r longmcq(opts_p)`
+````
+
+## template
+
+````{verbatim}
+```{r, echo = FALSE}
+opts_p <- c("** **", "** **", "** **")
+```
+`r longmcq(opts_p)`
+````
+
+## Expandable box
+
+Expandable box:
+
+`r hide("Title")` Contents `r unhide()`
+
+Code:
+
+```{r, eval=FALSE}
+`r hide("Title")`
+Contents
+`r unhide()`
+```
+
+Optionally, you may want to use a [callout block](/qmds/callouts.qmd).
+
+::: {.callout-note collapse="true" title="Title"}
+Contents
+:::
+
+```{bash,eval=FALSE}
+::: {.callout-note collapse="true" title="Title"}
+Contents
+:::
+```
 
 ## Install
 
-Install through R with:
-
-```{r, eval=FALSE}
-install.packages("webexercises")
-```
+See install instruction in the [setup page](/setup/setup.qmd#r-package-installs). 
 
 ## Initialise
 
