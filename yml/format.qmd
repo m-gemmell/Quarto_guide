@@ -3,3 +3,12 @@ engine: knitr
 ---
 
 # Format
+
+
+
+
+Highlight
+
+Accessible code highlighting via [a11y project](https://www.a11yproject.com/).
+
+How to incroporate in quarto via [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/)

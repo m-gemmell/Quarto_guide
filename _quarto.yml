@@ -73,6 +73,7 @@ website:
         - href: qmds/images.qmd
         - href: qmds/callouts.qmd
         - href: qmds/icons.qmd
+        - href: qmds/github_code_embed.qmd
       - section: "Interactive"
         contents:
         - href: qmds/code.qmd
@@ -116,6 +117,9 @@ format:
       gutter-width: 0.75em
     css: include/webex.css
     include-after-body: include/webex.js
+    #Code highlighting style
+    #a11y is accessible and auto switches between dark and light mode
+    highlight-style: a11y
     #HTML themes: https://quarto.org/docs/output-formats/html-themes.html
     theme: 
       dark: [darkly, styles_dark.scss]

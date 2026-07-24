@@ -64,5 +64,8 @@
   },
   "css/light_scss.qmd": {
     "light_scss.html": "79600e55"
+  },
+  "qmds/github_code_embed.qmd": {
+    "github_code_embed.html": "5d807f1a"
   }
 }

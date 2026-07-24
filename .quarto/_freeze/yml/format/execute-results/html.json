@@ -1,8 +1,8 @@
 {
-  "hash": "24e1a27fb23a01662e35c537f29aa07c",
+  "hash": "ce6a36ca4178f86ba7a50b3f4e227152",
   "result": {
     "engine": "knitr",
-    "markdown": "---\nengine: knitr\n---\n\n# Format",
+    "markdown": "---\nengine: knitr\n---\n\n# Format\n\n\n\n\nHighlight\n\nAccessible code highlighting via [a11y project](https://www.a11yproject.com/).\n\nHow to incroporate in quarto via [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/)",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

@@ -1,3 +1,6 @@
+---
+engine: knitr
+---
 # Github code embed
 
 To embed code from a github page you can use the site [https://emgithub.com/](https://emgithub.com/).
@@ -5,9 +8,26 @@ To embed code from a github page you can use the site [https://emgithub.com/](ht
 To do so:
 
 1. Put the link to the github file into the top bar
-2. Copy the code form the `<script>` to embed
-3. Paste the code into your .qmd file
+2. Change the theme from `Default` to `A 11 Y Dark` or `A 11 Y Light`
+    - The default does not work properly with the dark theme of our websites
+3. Press `Go`
+4. Copy the code form the `<script>` to embed
+5. Paste the code into your .qmd file
 
 For example:
 
-Github link: 
+Github link: [https://github.com/m-gemmell/Quarto_guide/blob/main/qmds/example_github_code.R](https://github.com/m-gemmell/Quarto_guide/blob/main/qmds/example_github_code.R)
+
+The script for embedding (A 11 Y Dark):
+
+```{bash, eval=FALSE}
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+```
+
+The embed:
+
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+
+The same embed but with A 11 Light looks like so:
+
+<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>

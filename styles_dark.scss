@@ -17,29 +17,28 @@ $ibm-orange: #fe6100;
 $ibm-yellow: #ffb000;
 $black: #000000;
 $light-grey: #f9f9f9;
+$white: #FFFFFF;
 
 // Base document colors
 // https://quarto.org/docs/output-formats/html-themes.html
 // Nav bar (i.e. top)
-$navbar-bg: $ibm-blue;
-$navbar-fg: $light-grey;
+$navbar-bg: $ibm-blue; // Main colour of header
+$navbar-fg: $white; // Text colour
 $navbar-hl: $ibm-yellow; // highlight color when hovering over navbar links
-$navbar-color: $light-grey;
 // Footer (i.e. bottom)
-$footer-bg: $ibm-blue; // footer
+$footer-bg: $ibm-blue; 
 $footer-fg: $black;
-$toc-hl: $ibm-yellow;
 // Text of side bar (i.e. left)
-$sidebar-hl: $ibm-yellow;
-$sidebar-fg: $light-grey;
+$sidebar-fg: $white; // Text colour
 // Colour of links
 $link-color: $ibm-blue;
 
-$pagination-color: $ibm-blue;
+
 
 //CSS code
+/*-- scss:rules --*/
 .navbar-logo {
-  max-height: 200px;
+  max-height: 50px;
 }
 
 body {
@@ -54,11 +53,6 @@ h2, h3, h4, h5, h6 {
 }
 monofont {
   font-family: "Fira+Mono";
-}
-
-// Code font
-code {
-  color: $ibm-yellow ;
 }
 
 .tippy-tooltip {
