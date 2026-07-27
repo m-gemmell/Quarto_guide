@@ -11,7 +11,9 @@ To do so:
 2. Change the theme from `Default` to `A 11 Y Dark` or `A 11 Y Light`
     - The default does not work properly with the dark theme of our websites
 3. Press `Go`
-4. Copy the code form the `<script>` to embed
+4. Copy the code form the `<iframe>` to embed
+    - This displays the exact code as shown in the preview
+    - If you use the `<script>` the code highlighting may be difficult to read due to your [format](/yml/format.qmd) and [css](/css/css.qmd) settings
 5. Paste the code into your .qmd file
 
 For example:
@@ -21,13 +23,13 @@ Github link: [https://github.com/m-gemmell/Quarto_guide/blob/main/qmds/example_g
 The script for embedding (A 11 Y Dark):
 
 ```{bash, eval=FALSE}
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<iframe frameborder="0" scrolling="no" style="width:100%; height:120px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
 ```
 
 The embed:
 
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<iframe frameborder="0" scrolling="no" style="width:100%; height:120px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
 
 The same embed but with A 11 Light looks like so:
 
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></script>
+<iframe frameborder="0" scrolling="no" style="width:100%; height:120px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>

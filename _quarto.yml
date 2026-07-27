@@ -2,6 +2,7 @@ project:
   type: website
 editor:
   render-on-save: true
+knitr: true
 #Website
 website:
   ## Turn Breadcrumbs off
@@ -70,9 +71,11 @@ website:
       - href: qmds/qmds.qmd
       - section: "Static"
         contents:
+        - href: qmds/markdown.qmd
         - href: qmds/images.qmd
         - href: qmds/callouts.qmd
         - href: qmds/icons.qmd
+        - href: qmds/tables.qmd
         - href: qmds/github_code_embed.qmd
       - section: "Interactive"
         contents:
@@ -98,7 +101,8 @@ website:
       align: left
       contents:
       - href: yml/yml.qmd
-      - href: project.qmd
+      - href: yml/yml_file.qmd
+      - href: yml/project_n_misc.qmd
       - section: "Website & structure"
         contents:
         - href: yml/website.qmd

@@ -1,0 +1,56 @@
+# Tables
+
+You can include tables.
+
+## Handmade
+
+The easiest way to create a table in VScode is to:
+
+1.  **Enter visual mode:** Right click on markdown page and select `Edit in Visual mode`
+2.  Click the `Table` option in the top menu of the page
+3.  Click `Insert Table`
+4.  Choose your preferred options followed by `OK`
+5.  Fill in your table
+
+Example table:
+
+| qmd           | css                                        | yml           |
+|---------------|--------------------------------------------|---------------|
+| contents      | theme                                      | structure     |
+| lots of files | one dark and one light file and maybe more | one main file |
+| Markdown code | scss and css code                          | quarto        |
+
+## R table
+
+You can also display R `data.frames` and matrices.
+I like to use the [`reactable` package](https://glin.github.io/reactable/index.html).
+
+```{r}
+#Load package
+library("mgrtibbles")
+#Set seed for random sampling
+set.seed("483")
+#mushroom_tbl tibble for demonstration
+mushroom_tbl <- mgrtibbles::mushroom_tbl |>
+    #Random sample of 150 rows
+    dplyr::slice_sample(n = 150, replace=FALSE)
+#Reset random seed to normal operation
+set.seed(NULL)
+```
+
+```{r}
+library("reactable")
+options(reactable.theme = reactableTheme(
+  color = "hsl(233, 9%, 87%)",
+  backgroundColor = "hsl(233, 9%, 19%)",
+  borderColor = "hsl(233, 9%, 22%)",
+  stripedColor = "hsl(233, 12%, 22%)",
+  highlightColor = "hsl(233, 12%, 24%)",
+  inputStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
+  selectStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
+  pageButtonHoverStyle = list(backgroundColor = "hsl(233, 9%, 25%)"),
+  pageButtonActiveStyle = list(backgroundColor = "hsl(233, 9%, 28%)")
+))
+mushroom_tbl |>
+    reactable::reactable()
+```

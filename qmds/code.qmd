@@ -4,14 +4,127 @@ engine: knitr
 
 # Code
 
+You can include various code blocks.
+We'll demonstrate with R code initially.
 
+## Inline code
+
+You can include inline code.
+
+This sentence ends with a number created by inline code, 1+1 = `r 1+1`.
+
+The above sentence in markdown code:
+
+````{verbatim}
+This sentence ends with a number created by inline code, 1+1 = `r 1+1`.
+````
+
+## Code block
+
+Code block and output:
+
+```{r}
+1+1
+```
+
+Code block markdown code:
+
+````{verbatim}
+```{r}
+1+1
+```
+````
+
+## Display code block
+
+To show the code block but not the output add the option `eval=FALSE`
+
+```{r, eval=FALSE}
+#Below is some example code that we don't want markdown/quarto to run
+#We just want the code block to be displayed
+long_function(x=long_data, y=more_data)
+```
+
+Code block markdown code:
+
+````{verbatim}
+```{r, eval=FALSE}
+#Below is some example code that we don't want markdown/quarto to run
+#We just want the code block to be displayed
+long_function(x=long_data, y=more_data)
+```
+````
+
+## Display output
+
+To show only the output but not the code block add the option `echo=FALSE`
+
+```{r, echo=FALSE}
+100*12
+```
+
+Code block markdown code:
+
+````{verbatim}
+```{r, echo=FALSE}
+100*12
+```
+````
+
+## Libraries
+
+Libraries need to be loaded for each page you want to use them.
+
+You can add the below code block at the top of your markdown page to silently load the `Tidyverse` package.
+Otherwise your markdown file will have all the unneeded output from loading a library.
+
+````{verbatim}
+```{r, echo=FALSE, warning=FALSE, results=FALSE, output=FALSE}
+#Load library so functions run smoothly
+library(tidyverse)
+```
+````
 
 ## Non R code
 
 You can include bash and python code.
 
+### Python
 
-If you in do you will unfrintunately need the below code at the top of each `.qmd` page that contains non R code.
+Python code:
+
+```{python, eval=FALSE}
+1+1
+```
+
+Markdown code:
+
+````{verbatim}
+```{python, eval=FALSE}
+1+1
+```
+````
+
+More information include installation instructions here: [Quarto Using Python](https://quarto.org/docs/computations/python.html)
+
+### Bash/Linux
+
+Linux code:
+
+```{bash,eval=FALSE}
+cd ~/project_dir/analysis_1
+```
+
+````{verbatim}
+```{bash,eval=FALSE}
+cd ~/project_dir/analysis_1
+```
+````
+
+### Force knitr engine
+
+If your page has no R code and uses non-R languages you will need the below code at the top of each `.qmd` page that contains non R code.
+This will mean you will still produce `.html` pages.
 You need this even if you set `eval=FALSE`.
 
 ```{bash, eval=FALSE}
@@ -19,3 +132,48 @@ You need this even if you set `eval=FALSE`.
 engine: knitr
 ---
 ```
+
+## Verbatim
+
+You can display the markdown code for a code block.
+
+Code block:
+
+```{r}
+1+1
+```
+
+Markdown code for code block:
+
+````{verbatim}
+```{r}
+1+1
+```
+````
+
+Markdown code for code block's markdown code:
+
+`````{verbatim}
+````{verbatim}
+```{r, eval=TRUE}
+1 + 1
+```
+````
+`````
+
+::: {.callout-note collapse="true" title="Verbatim a verbatim"}
+If you want to verbatim a verbatim you'll need to add an extra back tick (`).
+
+Markdown code for last verbatim code:
+
+``````{verbatim}
+`````{verbatim}
+````{verbatim}
+```{r, eval=TRUE}
+1 + 1
+```
+````
+`````
+``````
+:::
+

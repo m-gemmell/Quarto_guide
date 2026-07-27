@@ -1,7 +1,11 @@
 ---
 engine: knitr
 ---
-# Project
+# Project and misc
+
+There are a few segments that can be included at the top of the yml file.
+
+## Project
 
 The type of project (i.e. is it a website, book, etc.)
 
@@ -25,3 +29,21 @@ You can also create:
 
 There are also other [Project options](https://quarto.org/docs/reference/projects/options.html) than just `type:`.
 For example you can set the output director with `output-dir:`.
+
+## Editor
+
+Editor options.
+We set this part to try to ensure our preview updates when we save.
+
+```{bash, eval=FALSE}
+editor:
+  render-on-save: true
+```
+
+## Knitr
+
+Try to force the use of knitr.
+
+```{bash,eval=FALSE}
+knitr: true
+```

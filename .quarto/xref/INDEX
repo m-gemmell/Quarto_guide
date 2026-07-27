@@ -67,5 +67,17 @@
   },
   "qmds/github_code_embed.qmd": {
     "github_code_embed.html": "5d807f1a"
+  },
+  "qmds/tables.qmd": {
+    "tables.html": "f7574ca0"
+  },
+  "qmds/markdown.qmd": {
+    "markdown.html": "d420493c"
+  },
+  "yml/yml_file.qmd": {
+    "yml_file.html": "aefd8385"
+  },
+  "yml/project_n_misc.qmd": {
+    "project_n_misc.html": "0630828a"
   }
 }

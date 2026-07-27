@@ -17,7 +17,9 @@ You will only be able to use free icons.
 
 ## Fontawesome
 
-Generally FOnt awesome is my first choice for most icons.
+Generally Font awesome is my first choice for most icons.
+
+[Fontawesome](https://fontawesome.com/search)
 
 The below code can be used to add `r icons::icon_style(icons::fontawesome("rocket", style="solid"), fill = "#648fff")`. Colour chosen to work on Light and Dark styles.
 
@@ -48,6 +50,8 @@ More info below in the [Searching part](#searching) and [Fontawesome styles](#fo
 
 Ionicons is my second choice.
 
+- [Ionicons](https://ionic.io/ionicons)
+
 The below code can be used to add `r icons::icon_style(icons::ionicons("calculator"), fill = "#648fff")`.
 
 ````{verbatim}
@@ -57,6 +61,8 @@ The below code can be used to add `r icons::icon_style(icons::ionicons("calculat
 ## Bioicons
 
 Bioicons is good for biological icons.
+
+- [Bioicons](https://bioicons.com/)
 
 The below code can be used to add `r icons::bioicons("dna-7")`.
 

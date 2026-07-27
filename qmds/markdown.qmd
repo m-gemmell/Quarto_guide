@@ -1,0 +1,17 @@
+---
+toc: false
+---
+
+# Markdown
+
+[Quarto markdown basics page](https://quarto.org/docs/authoring/markdown-basics.html)
+
+<center>
+![](images/rmarkdown_cheatsheet_1.png){style="width:100%"}
+</center>
+
+<center>
+![](images/rmarkdown_cheatsheet_2.png){style="width:100%"}
+</center>
+
+Source: [https://opensource.posit.co/resources/cheatsheets/rmarkdown/](https://opensource.posit.co/resources/cheatsheets/rmarkdown/)

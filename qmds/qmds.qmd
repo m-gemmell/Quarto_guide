@@ -6,5 +6,34 @@ engine: knitr
 
 Quarto uses `.qmd` which are essentially markdown files (.qmd = quarto markdown).
 
+Their are 2 major parts in this section: Static, and Interactive.
+
+## Static
+
+- [Markdown](/qmds/markdown.qmd): Link to markdown intro and cheatsheets
+- [Images](/qmds/images.qmd): Adding and formatting images
+- [Callouts](/qmds/callouts.qmd): Callout blocks (e.g. note, tip, warning, etc.)
+- [Icons](/qmds/icons.qmd): `r icons::icon_style(icons::fontawesome("rocket", style="solid"), fill = "#648fff")`, 
+`r icons::icon_style(icons::fontawesome("save", style="solid"), fill = "#648fff")`, etc.
+- [Tables](/qmds/tables.qmd): Making tables by "hand" and displaying R `data.frames` contents nicely
+- [Github code embed](/qmds/github_code_embed.qmd): Embedding code from a file in a github repo
+
+## Interactive
+
+- [Code](/qmds/code.qmd): Running and/or displaying code
+- [Tippy tooltips](/qmds/tippy_tooltips.qmd): Hovering over underlined text for a <u id='tippy'>tooltip</u> 
+- [Webexercises](/qmds/webexercises.qmd): Adding interactive quizzes (MCQs)
+- [Videos](/qmds/videos.qmd): Embedding youtube videos
+
+
+
+
+```{r, echo=FALSE}
+#Tippy tooltips
+tippy::tippy_this(elementId = "tippy", 
+                  tooltip = "Tippy is an R package to make tooltips",
+                  arrow = TRUE, 
+                  placement = "bottom")
+```
 
 

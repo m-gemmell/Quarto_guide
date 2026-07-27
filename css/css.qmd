@@ -10,8 +10,8 @@ They have all the functionality of css files but more to make it easier.
 We have set a light and dark theme for this website.
 Therefore we use 2 scss files:
 
-- `styles_dark.scss` for the dark theme
-- `styles_light.scss` for the light theme
+- [`styles_dark.scss`](/css/dark_scss.qmd) for the dark theme
+- [`styles_light.scss`](/css/light_scss.qmd) for the light theme
 
 These are designated in the [format segment of our `_quarto.yml` file](/yml/format.qmd).
 

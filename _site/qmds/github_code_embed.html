@@ -81,8 +81,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-331b4e67dbf8691b3cdf5ff12c9d32d0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-57e793f12036837821a4d557d3232c9f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-306dd9fc79c082aa46323e80271cd7ea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-79d8205cf7a167c7496ffbc0afa7fc79.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -465,19 +465,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>The default does not work properly with the dark theme of our websites</li>
 </ul></li>
 <li>Press <code>Go</code></li>
-<li>Copy the code form the <code>&lt;script&gt;</code> to embed</li>
+<li>Copy the code form the <code>&lt;iframe&gt;</code> to embed
+<ul>
+<li>This displays the exact code as shown in the preview</li>
+<li>If you use the <code>&lt;script&gt;</code> the code highlighting may be difficult to read due to your <a href="../yml/format.html">format</a> and <a href="../css/css.html">css</a> settings</li>
+</ul></li>
 <li>Paste the code into your .qmd file</li>
 </ol>
 <p>For example:</p>
 <p>Github link: <a href="https://github.com/m-gemmell/Quarto_guide/blob/main/qmds/example_github_code.R">https://github.com/m-gemmell/Quarto_guide/blob/main/qmds/example_github_code.R</a></p>
 <p>The script for embedding (A 11 Y Dark):</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>script <span class="va">src</span><span class="op">=</span><span class="st">"https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&amp;style=a11y-dark&amp;type=code&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showFullPath=on&amp;showCopy=on"</span><span class="op">&gt;&lt;</span>/script<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>iframe <span class="va">frameborder</span><span class="op">=</span><span class="st">"0"</span> <span class="va">scrolling</span><span class="op">=</span><span class="st">"no"</span> <span class="va">style</span><span class="op">=</span><span class="st">"width:100%; height:120px;"</span> <span class="va">allow</span><span class="op">=</span><span class="st">"clipboard-write"</span> <span class="va">src</span><span class="op">=</span><span class="st">"https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&amp;style=a11y-dark&amp;type=code&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showFullPath=on&amp;showCopy=on"</span><span class="op">&gt;&lt;</span>/iframe<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>The embed:</p>
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&amp;style=a11y-dark&amp;type=code&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showFullPath=on&amp;showCopy=on"></script>
+<iframe frameborder="0" scrolling="no" style="width:100%; height:120px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&amp;style=a11y-dark&amp;type=code&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showFullPath=on&amp;showCopy=on">
+</iframe>
 <p>The same embed but with A 11 Light looks like so:</p>
-<script src="https://emgithub.com/embed-v2.js?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&amp;style=a11y-light&amp;type=code&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showFullPath=on&amp;showCopy=on"></script>
+<iframe frameborder="0" scrolling="no" style="width:100%; height:120px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&amp;style=a11y-light&amp;type=code&amp;showBorder=on&amp;showLineNumbers=on&amp;showFileMeta=on&amp;showFullPath=on&amp;showCopy=on">
+</iframe>
 
 
 </section>

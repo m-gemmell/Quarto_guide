@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../qmds/images.html" rel="next">
+<link href="../qmds/markdown.html" rel="next">
 <link href="..//images/quarto_quarters.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -74,6 +74,22 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="../site_libs/tippyjs-3.2.0/themes/google.css" rel="stylesheet">
+
+<link href="../site_libs/tippyjs-3.2.0/themes/light-border.css" rel="stylesheet">
+
+<link href="../site_libs/tippyjs-3.2.0/themes/light.css" rel="stylesheet">
+
+<link href="../site_libs/tippyjs-3.2.0/themes/translucent.css" rel="stylesheet">
+
+<script src="../site_libs/tippyjs-3.2.0/tippy.all.min.js"></script>
+
+<script src="../site_libs/tippy-binding-0.1.0/tippy.js"></script>
+
 
 
 <link rel="stylesheet" href="../include/webex.css">
@@ -338,6 +354,12 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../qmds/markdown.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../qmds/images.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Images</span></a>
   </div>
@@ -352,6 +374,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../qmds/icons.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Icons</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../qmds/tables.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Tables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -407,7 +435,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#qmd-files" id="toc-qmd-files" class="nav-link active" data-scroll-target="#qmd-files">qmd files</a></li>
+  <li><a href="#qmd-files" id="toc-qmd-files" class="nav-link active" data-scroll-target="#qmd-files">qmd files</a>
+  <ul class="collapse">
+  <li><a href="#static" id="toc-static" class="nav-link" data-scroll-target="#static">Static</a></li>
+  <li><a href="#interactive" id="toc-interactive" class="nav-link" data-scroll-target="#interactive">Interactive</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -421,8 +453,35 @@ ul.task-list li input[type="checkbox"] {
 <section id="qmd-files" class="level1">
 <h1>qmd files</h1>
 <p>Quarto uses <code>.qmd</code> which are essentially markdown files (.qmd = quarto markdown).</p>
+<p>Their are 2 major parts in this section: Static, and Interactive.</p>
+<section id="static" class="level2">
+<h2 class="anchored" data-anchor-id="static">Static</h2>
+<ul>
+<li><a href="../qmds/markdown.html">Markdown</a>: Link to markdown intro and cheatsheets</li>
+<li><a href="../qmds/images.html">Images</a>: Adding and formatting images</li>
+<li><a href="../qmds/callouts.html">Callouts</a>: Callout blocks (e.g.&nbsp;note, tip, warning, etc.)</li>
+<li><a href="../qmds/icons.html">Icons</a>: <svg viewbox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#648fff;" xmlns="http://www.w3.org/2000/svg"> <path d="M505.12019,19.09375c-1.18945-5.53125-6.65819-11-12.207-12.1875C460.716,0,435.507,0,410.40747,0,307.17523,0,245.26909,55.20312,199.05238,128H94.83772c-16.34763.01562-35.55658,11.875-42.88664,26.48438L2.51562,253.29688A28.4,28.4,0,0,0,0,264a24.00867,24.00867,0,0,0,24.00582,24H127.81618l-22.47457,22.46875c-11.36521,11.36133-12.99607,32.25781,0,45.25L156.24582,406.625c11.15623,11.1875,32.15619,13.15625,45.27726,0l22.47457-22.46875V488a24.00867,24.00867,0,0,0,24.00581,24,28.55934,28.55934,0,0,0,10.707-2.51562l98.72834-49.39063c14.62888-7.29687,26.50776-26.5,26.50776-42.85937V312.79688c72.59753-46.3125,128.03493-108.40626,128.03493-211.09376C512.07526,76.5,512.07526,51.29688,505.12019,19.09375ZM384.04033,168A40,40,0,1,1,424.05,128,40.02322,40.02322,0,0,1,384.04033,168Z"></path></svg>, <svg viewbox="0 0 448 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#648fff;" xmlns="http://www.w3.org/2000/svg"> <path d="M433.941 129.941l-83.882-83.882A48 48 0 0 0 316.118 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V163.882a48 48 0 0 0-14.059-33.941zM224 416c-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64s64 28.654 64 64c0 35.346-28.654 64-64 64zm96-304.52V212c0 6.627-5.373 12-12 12H76c-6.627 0-12-5.373-12-12V108c0-6.627 5.373-12 12-12h228.52c3.183 0 6.235 1.264 8.485 3.515l3.48 3.48A11.996 11.996 0 0 1 320 111.48z"></path></svg>, etc.</li>
+<li><a href="../qmds/tables.html">Tables</a>: Making tables by “hand” and displaying R <code>data.frames</code> contents nicely</li>
+<li><a href="../qmds/github_code_embed.html">Github code embed</a>: Embedding code from a file in a github repo</li>
+</ul>
+</section>
+<section id="interactive" class="level2">
+<h2 class="anchored" data-anchor-id="interactive">Interactive</h2>
+<ul>
+<li><a href="../qmds/code.html">Code</a>: Running and/or displaying code</li>
+<li><a href="../qmds/tippy_tooltips.html">Tippy tooltips</a>: Hovering over underlined text for a <u id="tippy">tooltip</u></li>
+<li><a href="../qmds/webexercises.html">Webexercises</a>: Adding interactive quizzes (MCQs)</li>
+<li><a href="../qmds/videos.html">Videos</a>: Embedding youtube videos</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<span class="tippy html-widget html-fill-item" height="464px" id="htmlwidget-3a6f6780574f1888e998" width="100%"></span>
+<script type="application/json" data-for="htmlwidget-3a6f6780574f1888e998">{"x":{"element":"tippy","opts":{"content":"Tippy is an R package to make tooltips","arrow":true,"placement":"bottom"}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1049,8 +1108,8 @@ window.onload = function() {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../qmds/images.html" class="pagination-link" aria-label="Images">
-        <span class="nav-page-text">Images</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../qmds/markdown.html" class="pagination-link" aria-label="Markdown">
+        <span class="nav-page-text">Markdown</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
