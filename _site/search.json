@@ -181,7 +181,7 @@
     "href": "yml/website.html",
     "title": "Website",
     "section": "",
-    "text": "Website",
+    "text": "The website segment is going to be the largest with many sub segments.\n\n\nThe main/overall options for the website segment I use are below:\n\nwebsite:\n  ## Turn Breadcrumbs off\n  bread-crumbs: false\n  ## Icon seen on tab\n  favicon: /images/favicon.png\n## Previous and next page links at bottom\n  page-navigation: true\n  ## Info seen when link is shared\n  title: \"Title\"\n  description: \"A description\"\n\nBreadcrumbs are the full path of a page is shown at the top, I keep this off.\n\n\n\n\nNavbar: Top navigation bar of website\n\nDetermines structure between segments\nLinks in hamburger menu if screen too narrow\n\nPage footer: Footer of page\nSidebar: Sidebar (i.e. left of page)\n\nDetermines structure within each segment",
     "crumbs": [
       "yml",
       "Website & structure",
@@ -224,7 +224,7 @@
     "href": "yml/navbar.html",
     "title": "Navbar",
     "section": "",
-    "text": "Navbar",
+    "text": "The navbar is the top navigation part of the website.\nQuarto page on Website Navigation\n\n\nTemplate:\n\n  navbar:\n    #Title on top left of navbar\n    title: Title\n    #Image left of title\n    logo: \"images/logo.png\"\n    # When to collapse to hamburger menu\n    # lg is default\n    collapse-below: lg\n\n\n\n\n\n\n\nNote\n\n\n\nMind the indentation which is required.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe size of the logo is set in the css as .navbar-logo\n\n\n\n\n\nThis sub-segment determines the links of the parts to be displayed right of the title (left of navbar).\nThis site’s Navbar left:\n\n###Navbar left\n    left:\n      - text: \"Overview\"\n        href: index.qmd\n      - text: \"Setup\"\n        href: setup/setup.qmd\n      - text: \"qmd\"\n        href: qmds/qmds.qmd\n      - text: \"css\"\n        href: css/css.qmd\n      - text: \"yml\"\n        href: yml/yml.qmd\n\n\n\n\nThis sub-segment determines the various author’s links (e.g. bluesky and linkedin to include). By default a toggle for dark/light mode ( ) and a search button ( ) are included.\nMy personal links:\n\n###Navbar right\n    right:\n    # List of icons: https://icons.getbootstrap.com/\n      - icon: cup\n        href: https://ko-fi.com/waveofinspiration\n        aria-label: Ko-fi\n      - icon: bluesky\n        href: https://bsky.app/profile/m-gemmell.bsky.social\n        aria-label: BlueSky\n      - icon: github\n        href: https://github.com/m-gemmell/Quarto_guide\n        aria-label: GitHub\n\nNEOF links:\n\n    right:\n    - icon: house-fill\n      href: https://neof.org.uk/training/\n      aria-label: NEOF website\n    - icon: linkedin\n      href: https://www.linkedin.com/in/training-neof/\n      aria-label: LinkedIn\n    - icon: bluesky\n      href: https://bsky.app/profile/nerc-eof.bsky.social\n      aria-label: bluesky\n\nCGR links:\n\n    right:\n    - icon: house-fill\n      href: https://www.liverpool.ac.uk/genomic-research/\n      aria-label: CGR website\n    - icon: linkedin\n      href: https://www.linkedin.com/showcase/liverpool-shared-research-facilities\n      aria-label: LinkedIn",
     "crumbs": [
       "yml",
       "Website & structure",
@@ -887,6 +887,66 @@
     "crumbs": [
       "yml",
       "Project and misc"
+    ]
+  },
+  {
+    "objectID": "yml/website.html#main-options",
+    "href": "yml/website.html#main-options",
+    "title": "Website",
+    "section": "",
+    "text": "The main/overall options for the website segment I use are below:\n\nwebsite:\n  ## Turn Breadcrumbs off\n  bread-crumbs: false\n  ## Icon seen on tab\n  favicon: /images/favicon.png\n## Previous and next page links at bottom\n  page-navigation: true\n  ## Info seen when link is shared\n  title: \"Title\"\n  description: \"A description\"\n\nBreadcrumbs are the full path of a page is shown at the top, I keep this off.",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Website"
+    ]
+  },
+  {
+    "objectID": "yml/website.html#sub-segments",
+    "href": "yml/website.html#sub-segments",
+    "title": "Website",
+    "section": "",
+    "text": "Navbar: Top navigation bar of website\n\nDetermines structure between segments\nLinks in hamburger menu if screen too narrow\n\nPage footer: Footer of page\nSidebar: Sidebar (i.e. left of page)\n\nDetermines structure within each segment",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Website"
+    ]
+  },
+  {
+    "objectID": "yml/navbar.html#main-options",
+    "href": "yml/navbar.html#main-options",
+    "title": "Navbar",
+    "section": "",
+    "text": "Template:\n\n  navbar:\n    #Title on top left of navbar\n    title: Title\n    #Image left of title\n    logo: \"images/logo.png\"\n    # When to collapse to hamburger menu\n    # lg is default\n    collapse-below: lg\n\n\n\n\n\n\n\nNote\n\n\n\nMind the indentation which is required.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe size of the logo is set in the css as .navbar-logo",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Navbar"
+    ]
+  },
+  {
+    "objectID": "yml/navbar.html#navbar-left",
+    "href": "yml/navbar.html#navbar-left",
+    "title": "Navbar",
+    "section": "",
+    "text": "This sub-segment determines the links of the parts to be displayed right of the title (left of navbar).\nThis site’s Navbar left:\n\n###Navbar left\n    left:\n      - text: \"Overview\"\n        href: index.qmd\n      - text: \"Setup\"\n        href: setup/setup.qmd\n      - text: \"qmd\"\n        href: qmds/qmds.qmd\n      - text: \"css\"\n        href: css/css.qmd\n      - text: \"yml\"\n        href: yml/yml.qmd",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Navbar"
+    ]
+  },
+  {
+    "objectID": "yml/navbar.html#navbar-right",
+    "href": "yml/navbar.html#navbar-right",
+    "title": "Navbar",
+    "section": "",
+    "text": "This sub-segment determines the various author’s links (e.g. bluesky and linkedin to include). By default a toggle for dark/light mode ( ) and a search button ( ) are included.\nMy personal links:\n\n###Navbar right\n    right:\n    # List of icons: https://icons.getbootstrap.com/\n      - icon: cup\n        href: https://ko-fi.com/waveofinspiration\n        aria-label: Ko-fi\n      - icon: bluesky\n        href: https://bsky.app/profile/m-gemmell.bsky.social\n        aria-label: BlueSky\n      - icon: github\n        href: https://github.com/m-gemmell/Quarto_guide\n        aria-label: GitHub\n\nNEOF links:\n\n    right:\n    - icon: house-fill\n      href: https://neof.org.uk/training/\n      aria-label: NEOF website\n    - icon: linkedin\n      href: https://www.linkedin.com/in/training-neof/\n      aria-label: LinkedIn\n    - icon: bluesky\n      href: https://bsky.app/profile/nerc-eof.bsky.social\n      aria-label: bluesky\n\nCGR links:\n\n    right:\n    - icon: house-fill\n      href: https://www.liverpool.ac.uk/genomic-research/\n      aria-label: CGR website\n    - icon: linkedin\n      href: https://www.linkedin.com/showcase/liverpool-shared-research-facilities\n      aria-label: LinkedIn",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Navbar"
     ]
   }
 ]

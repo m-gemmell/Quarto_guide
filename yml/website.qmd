@@ -3,3 +3,34 @@ engine: knitr
 ---
 # Website
 
+The website segment is going to be the largest with many sub segments.
+
+## Main options
+
+The main/overall options for the website segment I use are below:
+
+```{bash, eval=FALSE}
+website:
+  ## Turn Breadcrumbs off
+  bread-crumbs: false
+  ## Icon seen on tab
+  favicon: /images/favicon.png
+## Previous and next page links at bottom
+  page-navigation: true
+  ## Info seen when link is shared
+  title: "Title"
+  description: "A description"
+```
+
+Breadcrumbs are the full path of a page is shown at the top, I keep this off.
+
+## Sub-segments
+
+- [Navbar](/yml/navbar.qmd): Top navigation bar of website
+    - Determines structure between segments
+    - Links in hamburger menu if screen too narrow
+- [Page footer](/yml/page_footer.qmd): Footer of page
+- [Sidebar](/yml/sidebar.qmd): Sidebar (i.e. left of page)
+    - Determines structure within each segment
+
+

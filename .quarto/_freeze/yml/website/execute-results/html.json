@@ -1,8 +1,8 @@
 {
-  "hash": "0c6a3246c13db087e2cfbb5a4dac8bde",
+  "hash": "57907a572b13a053d56bcf9077736613",
   "result": {
     "engine": "knitr",
-    "markdown": "---\nengine: knitr\n---\n# Website\n\n",
+    "markdown": "---\nengine: knitr\n---\n# Website\n\nThe website segment is going to be the largest with many sub segments.\n\n## Main options\n\nThe main/overall options for the website segment I use are below:\n\n\n::: {.cell}\n\n```{.bash .cell-code}\nwebsite:\n  ## Turn Breadcrumbs off\n  bread-crumbs: false\n  ## Icon seen on tab\n  favicon: /images/favicon.png\n## Previous and next page links at bottom\n  page-navigation: true\n  ## Info seen when link is shared\n  title: \"Title\"\n  description: \"A description\"\n```\n:::\n\n\nBreadcrumbs are the full path of a page is shown at the top, I keep this off.\n\n## Sub-segments\n\n- [Navbar](/yml/navbar.qmd): Top navigation bar of website\n    - Determines structure between segments\n    - Links in hamburger menu if screen too narrow\n- [Page footer](/yml/page_footer.qmd): Footer of page\n- [Sidebar](/yml/sidebar.qmd): Sidebar (i.e. left of page)\n    - Determines structure within each segment\n\n\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

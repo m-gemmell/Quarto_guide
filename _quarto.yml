@@ -9,6 +9,7 @@ website:
   bread-crumbs: false
   ## Icon seen on tab
   favicon: /images/quarto_quarters.png
+  ## Previous and next page links at bottom
   page-navigation: true
   title: "MG Quarto Guide"
   description: "A guide to using quarto"
@@ -16,6 +17,8 @@ website:
   navbar:
     title: MG Quarto Guide
     logo: "images/quarto_quarters.png"
+    # When to collapse to hamburger menu
+    # lg is default
     collapse-below: lg
 ###Navbar left
     left:
@@ -106,7 +109,6 @@ website:
       - section: "Website & structure"
         contents:
         - href: yml/website.qmd
-        - href: yml/website_options.qmd
         - href: yml/navbar.qmd
         - href: yml/page_footer.qmd
         - href: yml/sidebar.qmd

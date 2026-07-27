@@ -23,6 +23,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -33,8 +68,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../yml/website_options.html" rel="next">
-<link href="../project_n_misc.qmd" rel="prev">
+<link href="../yml/navbar.html" rel="next">
+<link href="../yml/project_n_misc.html" rel="prev">
 <link href="..//images/quarto_quarters.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -334,6 +369,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">This site’s yml</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../yml/project_n_misc.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project and misc</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
@@ -347,12 +388,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../yml/website.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Website</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../yml/website_options.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Website options</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -385,7 +420,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#website" id="toc-website" class="nav-link active" data-scroll-target="#website">Website</a></li>
+  <li><a href="#website" id="toc-website" class="nav-link active" data-scroll-target="#website">Website</a>
+  <ul class="collapse">
+  <li><a href="#main-options" id="toc-main-options" class="nav-link" data-scroll-target="#main-options">Main options</a></li>
+  <li><a href="#sub-segments" id="toc-sub-segments" class="nav-link" data-scroll-target="#sub-segments">Sub-segments</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -398,8 +437,41 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="website" class="level1">
 <h1>Website</h1>
+<p>The website segment is going to be the largest with many sub segments.</p>
+<section id="main-options" class="level2">
+<h2 class="anchored" data-anchor-id="main-options">Main options</h2>
+<p>The main/overall options for the website segment I use are below:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">website:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">## Turn Breadcrumbs off</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="ex">bread-crumbs:</span> false</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">## Icon seen on tab</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="ex">favicon:</span> /images/favicon.png</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">## Previous and next page links at bottom</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="ex">page-navigation:</span> true</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="co">## Info seen when link is shared</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="ex">title:</span> <span class="st">"Title"</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="ex">description:</span> <span class="st">"A description"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>Breadcrumbs are the full path of a page is shown at the top, I keep this off.</p>
+</section>
+<section id="sub-segments" class="level2">
+<h2 class="anchored" data-anchor-id="sub-segments">Sub-segments</h2>
+<ul>
+<li><a href="../yml/navbar.html">Navbar</a>: Top navigation bar of website
+<ul>
+<li>Determines structure between segments</li>
+<li>Links in hamburger menu if screen too narrow</li>
+</ul></li>
+<li><a href="../yml/page_footer.html">Page footer</a>: Footer of page</li>
+<li><a href="../yml/sidebar.html">Sidebar</a>: Sidebar (i.e.&nbsp;left of page)
+<ul>
+<li>Determines structure within each segment</li>
+</ul></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1024,13 +1096,13 @@ window.onload = function() {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../project_n_misc.qmd" class="pagination-link" aria-label="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"></span>
+      <a href="../yml/project_n_misc.html" class="pagination-link" aria-label="Project and misc">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Project and misc</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../yml/website_options.html" class="pagination-link" aria-label="Website options">
-        <span class="nav-page-text">Website options</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../yml/navbar.html" class="pagination-link" aria-label="Navbar">
+        <span class="nav-page-text">Navbar</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

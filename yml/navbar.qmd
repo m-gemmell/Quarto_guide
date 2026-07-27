@@ -2,3 +2,105 @@
 engine: knitr
 ---
 # Navbar
+
+The navbar is the top navigation part of the website.
+
+[Quarto page on Website Navigation](https://quarto.org/docs/websites/website-navigation.html)
+
+## Main options
+
+Template:
+
+```{bash, eval=FALSE}
+  navbar:
+    #Title on top left of navbar
+    title: Title
+    #Image left of title
+    logo: "images/logo.png"
+    # When to collapse to hamburger menu
+    # lg is default
+    collapse-below: lg
+```
+
+
+::: {.callout-note}
+Mind the indentation which is required.
+:::
+
+::: {.callout-tip}
+The size of the logo is set in the [css](/css/css.qmd) as `.navbar-logo`
+:::
+
+## Navbar left
+
+This sub-segment determines the links of the parts to be displayed right of the title (left of navbar).
+
+This site's Navbar left:
+
+```{bash, eval=FALSE}
+###Navbar left
+    left:
+      - text: "Overview"
+        href: index.qmd
+      - text: "Setup"
+        href: setup/setup.qmd
+      - text: "qmd"
+        href: qmds/qmds.qmd
+      - text: "css"
+        href: css/css.qmd
+      - text: "yml"
+        href: yml/yml.qmd
+```
+
+## Navbar right
+
+This sub-segment determines the various author's links (e.g. bluesky and linkedin to include).
+By default a toggle for dark/light mode 
+(`r icons::icon_style(icons::fontawesome("toggle-on", style="solid"), fill = "#648fff")`) 
+and a search button
+(`r icons::icon_style(icons::fontawesome("search", style="solid"), fill = "#648fff")`)
+are included.
+
+My personal links:
+
+```{bash, eval=FALSE}
+###Navbar right
+    right:
+    # List of icons: https://icons.getbootstrap.com/
+      - icon: cup
+        href: https://ko-fi.com/waveofinspiration
+        aria-label: Ko-fi
+      - icon: bluesky
+        href: https://bsky.app/profile/m-gemmell.bsky.social
+        aria-label: BlueSky
+      - icon: github
+        href: https://github.com/m-gemmell/Quarto_guide
+        aria-label: GitHub
+```
+
+NEOF links:
+
+```{bash, eval=FALSE}
+    right:
+    - icon: house-fill
+      href: https://neof.org.uk/training/
+      aria-label: NEOF website
+    - icon: linkedin
+      href: https://www.linkedin.com/in/training-neof/
+      aria-label: LinkedIn
+    - icon: bluesky
+      href: https://bsky.app/profile/nerc-eof.bsky.social
+      aria-label: bluesky
+```
+
+CGR links:
+
+```{bash, eval=FALSE}
+    right:
+    - icon: house-fill
+      href: https://www.liverpool.ac.uk/genomic-research/
+      aria-label: CGR website
+    - icon: linkedin
+      href: https://www.linkedin.com/showcase/liverpool-shared-research-facilities
+      aria-label: LinkedIn
+```
