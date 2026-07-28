@@ -74,9 +74,7 @@ website:
         - href: qmds/markdown.qmd
         - href: qmds/images.qmd
         - href: qmds/callouts.qmd
-        - section: "test"
-          contents:
-          - href: qmds/icons.qmd
+        - href: qmds/icons.qmd
         - href: qmds/tables.qmd
         - href: qmds/github_code_embed.qmd
       - section: "Interactive"
