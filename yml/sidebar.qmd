@@ -2,3 +2,67 @@
 engine: knitr
 ---
 # Sidebar
+
+This determines the structure of the segments and what is shown in the sidebar (left).
+
+Websites are made out of:
+
+- Parts
+- Sections
+- Pages
+
+More info: [Quarto Side Navigation](https://quarto.org/docs/websites/website-navigation.html#side-navigation)
+
+## Example
+
+The start up of the sidebar segment up to the end of the qmd section.
+
+```{bash, eval=FALSE}
+##Sidebar
+  sidebar:
+###Overview part 
+    - id: Overview
+      title: "Overview"
+      style: "floating"
+      contents:
+#####Index page
+        - href: index.qmd
+###Setup part
+    - id: Setup
+      title: "Setup"
+      style: "floating"
+      collapse-level: 2
+      contents:
+      - href: setup/setup.qmd
+###qmd part
+    - id: qmd
+      title: "qmd"
+      style: "floating"
+      collapse-level: 2
+      contents:
+      - href: qmds/qmds.qmd
+####Static section
+      - section: "Static"
+        contents:
+        - href: qmds/markdown.qmd
+        - href: qmds/images.qmd
+        - href: qmds/callouts.qmd
+        - href: qmds/icons.qmd
+        - href: qmds/tables.qmd
+        - href: qmds/github_code_embed.qmd
+####Interactive section
+      - section: "Interactive"
+        contents:
+        - href: qmds/code.qmd
+        - href: qmds/tippy_tooltips.qmd
+        - href: qmds/webexercises.qmd
+        - href: qmds/videos.qmd
+```
+
+## Options
+
+- `style:` : Either "docked" or "floating"
+- `collapse-level:` : How many levels there are before sections are collapsed
+    - `1`: All sections are collapsed
+    - `2`: Sub-sections and beyond are collapsed
+    - Numbers continue but generally I won't even have sub-sections so its normally a choice between 1 and 2 for me

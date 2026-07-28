@@ -81,6 +81,7 @@ My personal links:
 NEOF links:
 
 ```{bash, eval=FALSE}
+###Navbar right
     right:
     - icon: house-fill
       href: https://neof.org.uk/training/
@@ -96,6 +97,7 @@ NEOF links:
 CGR links:
 
 ```{bash, eval=FALSE}
+###Navbar right
     right:
     - icon: house-fill
       href: https://www.liverpool.ac.uk/genomic-research/

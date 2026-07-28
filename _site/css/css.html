@@ -45,8 +45,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-5a2acb6f4ed5aeb23a104ba421924b87.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-306dd9fc79c082aa46323e80271cd7ea.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-79d8205cf7a167c7496ffbc0afa7fc79.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-ee0e945e86d16400581ceb923bc98653.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-7c63447129950cdf2aaac41ba8a88410.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -363,6 +363,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#css" id="toc-css" class="nav-link active" data-scroll-target="#css">css</a>
   <ul class="collapse">
   <li><a href="#files" id="toc-files" class="nav-link" data-scroll-target="#files">Files</a></li>
+  <li><a href="#fonts" id="toc-fonts" class="nav-link" data-scroll-target="#fonts">Fonts</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -386,6 +387,23 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="../css/light_scss.html"><code>styles_light.scss</code></a> for the light theme</li>
 </ul>
 <p>These are designated in the <a href="../yml/format.html">format segment of our <code>_quarto.yml</code> file</a>.</p>
+</section>
+<section id="fonts" class="level2">
+<h2 class="anchored" data-anchor-id="fonts">Fonts</h2>
+<p>At the top of the css I import the fonts. To get the import text:</p>
+<ol type="1">
+<li>Go to <a href="https://fonts.google.com/">google fonts</a></li>
+<li>Choose a font
+<ul>
+<li>e.g.&nbsp;<a href="https://fonts.google.com/specimen/Lexend">Lexend</a></li>
+</ul></li>
+<li>On the font page click “Get font” (top right)</li>
+<li>Click “&lt;&gt; Get embed code”</li>
+<li>I like to ensure only one font is chosen, bin any on the left that is not the one you want</li>
+<li>On the Web tab choose “<span class="citation" data-cites="import">@import</span>”</li>
+<li>Copy the embed code (you can exclude the <code>&lt;style&gt;</code> and <code>&lt;/style)</code>)</li>
+<li>Paste into your scss</li>
+</ol>
 
 
 </section>

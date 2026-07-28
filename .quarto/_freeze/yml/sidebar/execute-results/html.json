@@ -1,8 +1,8 @@
 {
-  "hash": "b460bcbf88df4ad21fa771e3dfc5f450",
+  "hash": "d44e3ded6062d43634dfa9ef51d43a02",
   "result": {
     "engine": "knitr",
-    "markdown": "---\nengine: knitr\n---\n# Sidebar",
+    "markdown": "---\nengine: knitr\n---\n# Sidebar\n\nThis determines the structure of the segments and what is shown in the sidebar (left).\n\nWebsites are made out of:\n\n- Parts\n- Sections\n- Pages\n\nMore info: [Quarto Side Navigation](https://quarto.org/docs/websites/website-navigation.html#side-navigation)\n\n## Example\n\nThe start up of the sidebar segment up to the end of the qmd section.\n\n\n::: {.cell}\n\n```{.bash .cell-code}\n##Sidebar\n  sidebar:\n###Overview part \n    - id: Overview\n      title: \"Overview\"\n      style: \"floating\"\n      contents:\n#####Index page\n        - href: index.qmd\n###Setup part\n    - id: Setup\n      title: \"Setup\"\n      style: \"floating\"\n      collapse-level: 2\n      contents:\n      - href: setup/setup.qmd\n###qmd part\n    - id: qmd\n      title: \"qmd\"\n      style: \"floating\"\n      collapse-level: 2\n      contents:\n      - href: qmds/qmds.qmd\n####Static section\n      - section: \"Static\"\n        contents:\n        - href: qmds/markdown.qmd\n        - href: qmds/images.qmd\n        - href: qmds/callouts.qmd\n        - href: qmds/icons.qmd\n        - href: qmds/tables.qmd\n        - href: qmds/github_code_embed.qmd\n####Interactive section\n      - section: \"Interactive\"\n        contents:\n        - href: qmds/code.qmd\n        - href: qmds/tippy_tooltips.qmd\n        - href: qmds/webexercises.qmd\n        - href: qmds/videos.qmd\n```\n:::\n\n\n## Options\n\n- `style:` : Either \"docked\" or \"floating\"\n- `collapse-level:` : How many levels there are before sections are collapsed\n    - `1`: All sections are collapsed\n    - `2`: Sub-sections and beyond are collapsed\n    - Numbers continue but generally I won't even have sub-sections so its normally a choice between 1 and 2 for me",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"

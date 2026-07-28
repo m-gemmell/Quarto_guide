@@ -2,3 +2,36 @@
 engine: knitr
 ---
 # Page footer
+
+Footer to include various links and images.
+
+This website:
+
+```{bash, eval=FALSE}
+##Page footer
+  page-footer:
+    left: |
+      ![](/images/quarto_quarters.png){width=50}
+    center: |
+      [![](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K6IRLA0)
+```
+
+NEOF:
+
+```{bash,eval=FALSE}
+##Page footer
+  page-footer:
+    left: |
+      [![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png){fig-alt="CC BY-SA 4.0" height=30px}](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+    center: |
+      [![](/images/NEOF_rounded_corners.png){fig-alt="NEOF" height=60px}](https://neof.org.uk/)
+```
+
+CGR:
+
+```{bash, eval=FALSE}
+##Page footer
+  page-footer:
+    center: |
+      [![](/images/CGR_large.png){fig-alt="CGR" height=60px}](https://www.liverpool.ac.uk/genomic-research/)
+```

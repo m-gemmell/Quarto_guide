@@ -55,21 +55,18 @@ website:
     - id: Overview
       title: "Overview"
       style: "floating"
-      align: left
       contents:
         - href: index.qmd
     - id: Setup
       title: "Setup"
       style: "floating"
       collapse-level: 2
-      align: left
       contents:
       - href: setup/setup.qmd
     - id: qmd
       title: "qmd"
       style: "floating"
       collapse-level: 2
-      align: left
       contents:
       - href: qmds/qmds.qmd
       - section: "Static"
@@ -77,7 +74,9 @@ website:
         - href: qmds/markdown.qmd
         - href: qmds/images.qmd
         - href: qmds/callouts.qmd
-        - href: qmds/icons.qmd
+        - section: "test"
+          contents:
+          - href: qmds/icons.qmd
         - href: qmds/tables.qmd
         - href: qmds/github_code_embed.qmd
       - section: "Interactive"
@@ -90,7 +89,6 @@ website:
       title: "css"
       style: "floating"
       collapse-level: 2
-      align: left
       contents:
       - href: css/css.qmd
       - section: "Dark and Light"
@@ -101,7 +99,6 @@ website:
       title: "yml"
       style: "floating"
       collapse-level: 2
-      align: left
       contents:
       - href: yml/yml.qmd
       - href: yml/yml_file.qmd
@@ -112,24 +109,42 @@ website:
         - href: yml/navbar.qmd
         - href: yml/page_footer.qmd
         - href: yml/sidebar.qmd
-      -href: yml/format.qmd
+      - href: yml/format.qmd
 #Format
 format:
   html:
+###Include table of contents
+### "On this page" right of page
+    toc: true
+
+###Page size
     grid:
+####Width of sidebar
       sidebar-width: 200px
+####Max width of main page
       body-width: 1200px
+####Width of empty margin at right of toc
+#### needed to give room for long headers
       margin-width: 150px
-      gutter-width: 0.75em
+####Space separating body from sidebar and toc  
+      gutter-width: 10px
+###Code highlighting style
+### a11y is accessible and auto switches between dark and light mode
+    highlight-style: a11y
+
+###Themes
+###HTML themes: https://quarto.org/docs/output-formats/html-themes.html
+    theme:
+####Dark theme with scss file
+      dark: [darkly, styles_dark.scss]
+####Light theme with scss
+      light: [styles_light.scss]
+####Any text not determined in scss files will be mainfont
+    mainfont: Lexend
+
+####Code will overflow in code blocks
+####set to scroll for scroll (i.e. horizontal scroll at bottom of block)
+    code-overflow: wrap
+###Paths for webexercises files
     css: include/webex.css
     include-after-body: include/webex.js
-    #Code highlighting style
-    #a11y is accessible and auto switches between dark and light mode
-    highlight-style: a11y
-    #HTML themes: https://quarto.org/docs/output-formats/html-themes.html
-    theme: 
-      dark: [darkly, styles_dark.scss]
-      light: [styles_light.scss]
-    mainfont: Lexend
-    code-overflow: wrap
-    toc: true

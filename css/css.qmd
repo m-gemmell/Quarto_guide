@@ -16,3 +16,17 @@ Therefore we use 2 scss files:
 These are designated in the [format segment of our `_quarto.yml` file](/yml/format.qmd).
 
 
+## Fonts
+
+At the top of the css I import the fonts.
+To get the import text:
+
+1. Go to [google fonts](https://fonts.google.com/)
+2. Choose a font
+    - e.g. [Lexend](https://fonts.google.com/specimen/Lexend)
+3. On the font page click "Get font" (top right)
+4. Click "<> Get embed code"
+5. I like to ensure only one font is chosen, bin any on the left that is not the one you want
+6. On the Web tab choose "@import"
+7. Copy the embed code (you can exclude the `<style>` and `</style)`)
+8. Paste into your scss

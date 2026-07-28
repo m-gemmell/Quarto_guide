@@ -35,7 +35,7 @@
     "href": "css/css.html",
     "title": "css",
     "section": "",
-    "text": "CSS stands for Cascading STyle Sheets and is a language for styling HTML web pages as well other documents.\nI specifically use .scss files (Sass: Syntactically Awesome Style Sheets). They have all the functionality of css files but more to make it easier.\n\n\nWe have set a light and dark theme for this website. Therefore we use 2 scss files:\n\nstyles_dark.scss for the dark theme\nstyles_light.scss for the light theme\n\nThese are designated in the format segment of our _quarto.yml file.",
+    "text": "CSS stands for Cascading STyle Sheets and is a language for styling HTML web pages as well other documents.\nI specifically use .scss files (Sass: Syntactically Awesome Style Sheets). They have all the functionality of css files but more to make it easier.\n\n\nWe have set a light and dark theme for this website. Therefore we use 2 scss files:\n\nstyles_dark.scss for the dark theme\nstyles_light.scss for the light theme\n\nThese are designated in the format segment of our _quarto.yml file.\n\n\n\nAt the top of the css I import the fonts. To get the import text:\n\nGo to google fonts\nChoose a font\n\ne.g. Lexend\n\nOn the font page click “Get font” (top right)\nClick “&lt;&gt; Get embed code”\nI like to ensure only one font is chosen, bin any on the left that is not the one you want\nOn the Web tab choose “@import”\nCopy the embed code (you can exclude the &lt;style&gt; and &lt;/style))\nPaste into your scss",
     "crumbs": [
       "css"
     ]
@@ -205,7 +205,7 @@
     "href": "yml/page_footer.html",
     "title": "Page footer",
     "section": "",
-    "text": "Page footer",
+    "text": "Page footer\nFooter to include various links and images.\nThis website:\n\n##Page footer\n  page-footer:\n    left: |\n      ![](/images/quarto_quarters.png){width=50}\n    center: |\n      [![](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K6IRLA0)\n\nNEOF:\n\n##Page footer\n  page-footer:\n    left: |\n      [![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png){fig-alt=\"CC BY-SA 4.0\" height=30px}](https://creativecommons.org/licenses/by-nc-sa/4.0/)\n    center: |\n      [![](/images/NEOF_rounded_corners.png){fig-alt=\"NEOF\" height=60px}](https://neof.org.uk/)\n\nCGR:\n\n##Page footer\n  page-footer:\n    center: |\n      [![](/images/CGR_large.png){fig-alt=\"CGR\" height=60px}](https://www.liverpool.ac.uk/genomic-research/)",
     "crumbs": [
       "yml",
       "Website & structure",
@@ -217,14 +217,18 @@
     "href": "yml/format.html",
     "title": "Format",
     "section": "",
-    "text": "Format\nHighlight\nAccessible code highlighting via a11y project.\nHow to incroporate in quarto via A Quarto tip a day"
+    "text": "Format\nGlobal format including themes of website\n\n#Format\nformat:\n  html:\n###Include table of contents\n### \"On this page\" right of page\n    toc: true\n\n###Page size\n    grid:\n####Width of sidebar\n      sidebar-width: 200px\n####Max width of main page\n      body-width: 1200px\n####Width of empty margin at right of toc\n#### needed to give room for long headers\n      margin-width: 150px\n####Space separating body from sidebar and toc  \n      gutter-width: 10px\n###Code highlighting style\n### a11y is accessible and auto switches between dark and light mode\n    highlight-style: a11y\n\n###Themes\n###HTML themes: https://quarto.org/docs/output-formats/html-themes.html\n    theme:\n####Dark theme with scss file\n      dark: [darkly, styles_dark.scss]\n####Light theme with scss\n      light: [styles_light.scss]\n####Any text not determined in scss files will be mainfont\n    mainfont: Lexend\n\n####Code will overflow in code blocks\n####set to scroll for scroll (i.e. horizontal scroll at bottom of block)\n    code-overflow: wrap\n###Paths for webexercises files\n    css: include/webex.css\n    include-after-body: include/webex.js\n\nHighlight\nAccessible code highlighting via a11y project.\nHow to incorporate in quarto via A Quarto tip a day",
+    "crumbs": [
+      "yml",
+      "Format"
+    ]
   },
   {
     "objectID": "yml/navbar.html",
     "href": "yml/navbar.html",
     "title": "Navbar",
     "section": "",
-    "text": "The navbar is the top navigation part of the website.\nQuarto page on Website Navigation\n\n\nTemplate:\n\n  navbar:\n    #Title on top left of navbar\n    title: Title\n    #Image left of title\n    logo: \"images/logo.png\"\n    # When to collapse to hamburger menu\n    # lg is default\n    collapse-below: lg\n\n\n\n\n\n\n\nNote\n\n\n\nMind the indentation which is required.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe size of the logo is set in the css as .navbar-logo\n\n\n\n\n\nThis sub-segment determines the links of the parts to be displayed right of the title (left of navbar).\nThis site’s Navbar left:\n\n###Navbar left\n    left:\n      - text: \"Overview\"\n        href: index.qmd\n      - text: \"Setup\"\n        href: setup/setup.qmd\n      - text: \"qmd\"\n        href: qmds/qmds.qmd\n      - text: \"css\"\n        href: css/css.qmd\n      - text: \"yml\"\n        href: yml/yml.qmd\n\n\n\n\nThis sub-segment determines the various author’s links (e.g. bluesky and linkedin to include). By default a toggle for dark/light mode ( ) and a search button ( ) are included.\nMy personal links:\n\n###Navbar right\n    right:\n    # List of icons: https://icons.getbootstrap.com/\n      - icon: cup\n        href: https://ko-fi.com/waveofinspiration\n        aria-label: Ko-fi\n      - icon: bluesky\n        href: https://bsky.app/profile/m-gemmell.bsky.social\n        aria-label: BlueSky\n      - icon: github\n        href: https://github.com/m-gemmell/Quarto_guide\n        aria-label: GitHub\n\nNEOF links:\n\n    right:\n    - icon: house-fill\n      href: https://neof.org.uk/training/\n      aria-label: NEOF website\n    - icon: linkedin\n      href: https://www.linkedin.com/in/training-neof/\n      aria-label: LinkedIn\n    - icon: bluesky\n      href: https://bsky.app/profile/nerc-eof.bsky.social\n      aria-label: bluesky\n\nCGR links:\n\n    right:\n    - icon: house-fill\n      href: https://www.liverpool.ac.uk/genomic-research/\n      aria-label: CGR website\n    - icon: linkedin\n      href: https://www.linkedin.com/showcase/liverpool-shared-research-facilities\n      aria-label: LinkedIn",
+    "text": "The navbar is the top navigation part of the website.\nQuarto page on Website Navigation\n\n\nTemplate:\n\n  navbar:\n    #Title on top left of navbar\n    title: Title\n    #Image left of title\n    logo: \"images/logo.png\"\n    # When to collapse to hamburger menu\n    # lg is default\n    collapse-below: lg\n\n\n\n\n\n\n\nNote\n\n\n\nMind the indentation which is required.\n\n\n\n\n\n\n\n\nTip\n\n\n\nThe size of the logo is set in the css as .navbar-logo\n\n\n\n\n\nThis sub-segment determines the links of the parts to be displayed right of the title (left of navbar).\nThis site’s Navbar left:\n\n###Navbar left\n    left:\n      - text: \"Overview\"\n        href: index.qmd\n      - text: \"Setup\"\n        href: setup/setup.qmd\n      - text: \"qmd\"\n        href: qmds/qmds.qmd\n      - text: \"css\"\n        href: css/css.qmd\n      - text: \"yml\"\n        href: yml/yml.qmd\n\n\n\n\nThis sub-segment determines the various author’s links (e.g. bluesky and linkedin to include). By default a toggle for dark/light mode ( ) and a search button ( ) are included.\nMy personal links:\n\n###Navbar right\n    right:\n    # List of icons: https://icons.getbootstrap.com/\n      - icon: cup\n        href: https://ko-fi.com/waveofinspiration\n        aria-label: Ko-fi\n      - icon: bluesky\n        href: https://bsky.app/profile/m-gemmell.bsky.social\n        aria-label: BlueSky\n      - icon: github\n        href: https://github.com/m-gemmell/Quarto_guide\n        aria-label: GitHub\n\nNEOF links:\n\n###Navbar right\n    right:\n    - icon: house-fill\n      href: https://neof.org.uk/training/\n      aria-label: NEOF website\n    - icon: linkedin\n      href: https://www.linkedin.com/in/training-neof/\n      aria-label: LinkedIn\n    - icon: bluesky\n      href: https://bsky.app/profile/nerc-eof.bsky.social\n      aria-label: bluesky\n\nCGR links:\n\n###Navbar right\n    right:\n    - icon: house-fill\n      href: https://www.liverpool.ac.uk/genomic-research/\n      aria-label: CGR website\n    - icon: linkedin\n      href: https://www.linkedin.com/showcase/liverpool-shared-research-facilities\n      aria-label: LinkedIn",
     "crumbs": [
       "yml",
       "Website & structure",
@@ -236,7 +240,7 @@
     "href": "yml/sidebar.html",
     "title": "Sidebar",
     "section": "",
-    "text": "Sidebar",
+    "text": "This determines the structure of the segments and what is shown in the sidebar (left).\nWebsites are made out of:\n\nParts\nSections\nPages\n\nMore info: Quarto Side Navigation\n\n\nThe start up of the sidebar segment up to the end of the qmd section.\n\n##Sidebar\n  sidebar:\n###Overview part \n    - id: Overview\n      title: \"Overview\"\n      style: \"floating\"\n      contents:\n#####Index page\n        - href: index.qmd\n###Setup part\n    - id: Setup\n      title: \"Setup\"\n      style: \"floating\"\n      collapse-level: 2\n      contents:\n      - href: setup/setup.qmd\n###qmd part\n    - id: qmd\n      title: \"qmd\"\n      style: \"floating\"\n      collapse-level: 2\n      contents:\n      - href: qmds/qmds.qmd\n####Static section\n      - section: \"Static\"\n        contents:\n        - href: qmds/markdown.qmd\n        - href: qmds/images.qmd\n        - href: qmds/callouts.qmd\n        - href: qmds/icons.qmd\n        - href: qmds/tables.qmd\n        - href: qmds/github_code_embed.qmd\n####Interactive section\n      - section: \"Interactive\"\n        contents:\n        - href: qmds/code.qmd\n        - href: qmds/tippy_tooltips.qmd\n        - href: qmds/webexercises.qmd\n        - href: qmds/videos.qmd\n\n\n\n\n\nstyle: : Either “docked” or “floating”\ncollapse-level: : How many levels there are before sections are collapsed\n\n1: All sections are collapsed\n2: Sub-sections and beyond are collapsed\nNumbers continue but generally I won’t even have sub-sections so its normally a choice between 1 and 2 for me",
     "crumbs": [
       "yml",
       "Website & structure",
@@ -389,7 +393,7 @@
     "href": "qmds/images.html",
     "title": "Images",
     "section": "",
-    "text": "Images\nThe below HTML code displays the image below it.\n\n![](/images/quarto_quarters.png){style=\"width:200px\" fig-align=\"center\"}\n\n\n\n\nYou can customise the display with various parts. Common inclusions for me are:\n\n![](/images/quarto_quarters.png){style=\"width:200px; border-radius:5px; background:white; border: white solid 5px\" fig-align=\"center\"}\n\n\n\n\n\n\nThe various options included above are:\n\nstyle=: Various style options\n\nwidth:: sets maximum width of image\n\nMax width of our site’s main are is 1000px, see yml format\nUseful to do this way so images don’t become tiny on a mobile phone.\nIf the width of the page is smaller than the set width it will interactively set the image to 100%\n\nborder-radius: adds curved corners, good for images with cornered background\n\n5px to 15px is generally a good range\n\nbackground: sets the background colour\nborder: sets the colour style and thickness of a border\n\nThese three options can be in any order\n\n\nfig-align= sets the alignment of the image\n\nTips:\n\nYou can use hexadecimals for colours (e.g. #111111)\nEnsure you have the ; between the different options in style=\"\"",
+    "text": "Images\nThe below HTML code displays the image below it.\n\n![](/images/quarto_quarters.png){style=\"width:200px\" fig-align=\"center\"}\n\n\n\n\nYou can customise the display with various parts. Common inclusions for me are:\n\n![](/images/quarto_quarters.png){style=\"width:200px; border-radius:5px; background:white; border: white solid 5px\" fig-align=\"center\"}\n\n\n\n\n\n\nThe various options included above are:\n\nstyle=: Various style options\n\nwidth:: sets maximum width of image\n\nMax width of our site’s main are is 1200px, see yml format\nUseful to do this way so images don’t become tiny on a mobile phone.\nIf the width of the page is smaller than the set width it will interactively set the image to 100%\n\nborder-radius: adds curved corners, good for images with cornered background\n\n5px to 15px is generally a good range\n\nbackground: sets the background colour\nborder: sets the colour style and thickness of a border\n\nThese three options can be in any order\n\n\nfig-align= sets the alignment of the image\n\nTips:\n\nYou can use hexadecimals for colours (e.g. #111111)\nEnsure you have the ; between the different options in style=\"\"",
     "crumbs": [
       "qmd",
       "Static",
@@ -942,11 +946,67 @@
     "href": "yml/navbar.html#navbar-right",
     "title": "Navbar",
     "section": "",
-    "text": "This sub-segment determines the various author’s links (e.g. bluesky and linkedin to include). By default a toggle for dark/light mode ( ) and a search button ( ) are included.\nMy personal links:\n\n###Navbar right\n    right:\n    # List of icons: https://icons.getbootstrap.com/\n      - icon: cup\n        href: https://ko-fi.com/waveofinspiration\n        aria-label: Ko-fi\n      - icon: bluesky\n        href: https://bsky.app/profile/m-gemmell.bsky.social\n        aria-label: BlueSky\n      - icon: github\n        href: https://github.com/m-gemmell/Quarto_guide\n        aria-label: GitHub\n\nNEOF links:\n\n    right:\n    - icon: house-fill\n      href: https://neof.org.uk/training/\n      aria-label: NEOF website\n    - icon: linkedin\n      href: https://www.linkedin.com/in/training-neof/\n      aria-label: LinkedIn\n    - icon: bluesky\n      href: https://bsky.app/profile/nerc-eof.bsky.social\n      aria-label: bluesky\n\nCGR links:\n\n    right:\n    - icon: house-fill\n      href: https://www.liverpool.ac.uk/genomic-research/\n      aria-label: CGR website\n    - icon: linkedin\n      href: https://www.linkedin.com/showcase/liverpool-shared-research-facilities\n      aria-label: LinkedIn",
+    "text": "This sub-segment determines the various author’s links (e.g. bluesky and linkedin to include). By default a toggle for dark/light mode ( ) and a search button ( ) are included.\nMy personal links:\n\n###Navbar right\n    right:\n    # List of icons: https://icons.getbootstrap.com/\n      - icon: cup\n        href: https://ko-fi.com/waveofinspiration\n        aria-label: Ko-fi\n      - icon: bluesky\n        href: https://bsky.app/profile/m-gemmell.bsky.social\n        aria-label: BlueSky\n      - icon: github\n        href: https://github.com/m-gemmell/Quarto_guide\n        aria-label: GitHub\n\nNEOF links:\n\n###Navbar right\n    right:\n    - icon: house-fill\n      href: https://neof.org.uk/training/\n      aria-label: NEOF website\n    - icon: linkedin\n      href: https://www.linkedin.com/in/training-neof/\n      aria-label: LinkedIn\n    - icon: bluesky\n      href: https://bsky.app/profile/nerc-eof.bsky.social\n      aria-label: bluesky\n\nCGR links:\n\n###Navbar right\n    right:\n    - icon: house-fill\n      href: https://www.liverpool.ac.uk/genomic-research/\n      aria-label: CGR website\n    - icon: linkedin\n      href: https://www.linkedin.com/showcase/liverpool-shared-research-facilities\n      aria-label: LinkedIn",
     "crumbs": [
       "yml",
       "Website & structure",
       "Navbar"
+    ]
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Overview",
+    "section": "",
+    "text": "This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "yml/sidebar.html#example",
+    "href": "yml/sidebar.html#example",
+    "title": "Sidebar",
+    "section": "",
+    "text": "The start up of the sidebar segment up to the end of the qmd section.\n\n##Sidebar\n  sidebar:\n###Overview part \n    - id: Overview\n      title: \"Overview\"\n      style: \"floating\"\n      contents:\n#####Index page\n        - href: index.qmd\n###Setup part\n    - id: Setup\n      title: \"Setup\"\n      style: \"floating\"\n      collapse-level: 2\n      contents:\n      - href: setup/setup.qmd\n###qmd part\n    - id: qmd\n      title: \"qmd\"\n      style: \"floating\"\n      collapse-level: 2\n      contents:\n      - href: qmds/qmds.qmd\n####Static section\n      - section: \"Static\"\n        contents:\n        - href: qmds/markdown.qmd\n        - href: qmds/images.qmd\n        - href: qmds/callouts.qmd\n        - href: qmds/icons.qmd\n        - href: qmds/tables.qmd\n        - href: qmds/github_code_embed.qmd\n####Interactive section\n      - section: \"Interactive\"\n        contents:\n        - href: qmds/code.qmd\n        - href: qmds/tippy_tooltips.qmd\n        - href: qmds/webexercises.qmd\n        - href: qmds/videos.qmd",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Sidebar"
+    ]
+  },
+  {
+    "objectID": "yml/sidebar.html#section-options",
+    "href": "yml/sidebar.html#section-options",
+    "title": "Sidebar",
+    "section": "",
+    "text": "style: : Either “docked” or “floating”\ncollapse-level: : How many levels there are before sections are collapsed\n\n1: All sections are collapsed\n2: Sub-sections and beyond are collapsed\nNUmbers continue but generally I won’t even have sub-sections so its normally a choice between 1 and 2 for me\n\nalign:",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Sidebar"
+    ]
+  },
+  {
+    "objectID": "yml/sidebar.html#options",
+    "href": "yml/sidebar.html#options",
+    "title": "Sidebar",
+    "section": "",
+    "text": "style: : Either “docked” or “floating”\ncollapse-level: : How many levels there are before sections are collapsed\n\n1: All sections are collapsed\n2: Sub-sections and beyond are collapsed\nNumbers continue but generally I won’t even have sub-sections so its normally a choice between 1 and 2 for me",
+    "crumbs": [
+      "yml",
+      "Website & structure",
+      "Sidebar"
+    ]
+  },
+  {
+    "objectID": "css/css.html#fonts",
+    "href": "css/css.html#fonts",
+    "title": "css",
+    "section": "",
+    "text": "At the top of the css I import the fonts. To get the import text:\n\nGo to google fonts\nChoose a font\n\ne.g. Lexend\n\nOn the font page click “Get font” (top right)\nClick “&lt;&gt; Get embed code”\nI like to ensure only one font is chosen, bin any on the left that is not the one you want\nOn the Web tab choose “@import”\nCopy the embed code (you can exclude the &lt;style&gt; and &lt;/style))\nPaste into your scss",
+    "crumbs": [
+      "css"
     ]
   }
 ]

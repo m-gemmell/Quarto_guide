@@ -27,7 +27,7 @@ The various options included above are:
 
 - `style=`: Various style options
     - `width:`: sets maximum width of image 
-        - Max width of our site's main are is 1000px, see [yml format](/yml/format.qmd)
+        - Max width of our site's main are is 1200px, see [yml format](/yml/format.qmd)
         - Useful to do this way so images don't become tiny on a mobile phone.
         - If the width of the page is smaller than the set width it will interactively set the image to 100%
     - `border-radius:` adds curved corners, good for images with cornered background
