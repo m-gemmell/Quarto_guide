@@ -4,6 +4,7 @@ engine: knitr
 # Github code embed
 
 To embed code from a github page you can use the site [https://emgithub.com/](https://emgithub.com/).
+The major benefit of this is that the embedded script will be automatically updated when the file/code in the github repo is updated.
 
 To do so:
 
@@ -33,3 +34,36 @@ The embed:
 The same embed but with A 11 Light looks like so:
 
 <iframe frameborder="0" scrolling="no" style="width:100%; height:120px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-light&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+
+## Setting width and height
+
+The `style=` part is used to set your width and height.
+These can be set in percentage (`%`) or pixels (`px`).
+
+### Width
+
+When you set width by a percentage it sets the width based on the page width.
+Therefore, if you set `width:100%` it will take up 100% of the available width (e.g. 1200 pixels on a page with width of 1200 pixels).
+
+### Height
+
+When you set height by a percentage it sets the height based on the default height of 150 pixels.
+Therefore, `height:100%` equates to `height:150px` no matter what.
+
+This is unfortunate as our embedded code will update whenever the file/code on the github repo updates.
+Though this is wanted it means if the height (number of lines) increases the bottom will get cut-off due to the setting of `height:` (in `style=`).
+
+A work around is to set your `height:` to a value much larger than produced by the website above.
+If the height is much larger than the actual code the embed will only take up as much height as it needs.
+See this in action below where we set the height to 5,000 pixels (`height:5000`).
+
+The script with height of 5,000 pixels:
+
+```{bash, eval=FALSE}
+<iframe frameborder="0" scrolling="no" style="width:100%; height:5000px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+```
+
+The embed where height was set to 5,000 pixels but it only uses the height it needs (120 pixels):
+
+<iframe frameborder="0" scrolling="no" style="width:100%; height:5000px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fm-gemmell%2FQuarto_guide%2Fblob%2Fmain%2Fqmds%2Fexample_github_code.R&style=a11y-dark&type=code&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+
