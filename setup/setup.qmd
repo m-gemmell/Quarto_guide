@@ -1,8 +1,17 @@
 # Setup
 
-To use quarto I would suggest using [VScode](https://code.visualstudio.com/) (You can "Disable Ai Features" in the settings).
+To use quarto I would suggest using [VScode](https://code.visualstudio.com/).
 
 To install Quarto see [The Quarto Get Started page](https://quarto.org/docs/get-started/).
+
+## VScode QoL
+
+Go to File > Preferences > Settings
+
+- Search for "Disable AI Features" and toggle it on
+- Search for "Accept suggestion on Enter" set it to "off"
+  - Getting widgets/code auto completed from a word like "table" when you press enter is very annoying
+  - Tab works for accepting the suggestion
 
 ## Extensions
 
