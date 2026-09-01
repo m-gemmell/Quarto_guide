@@ -8,9 +8,10 @@ engine: knitr
 
 The following website contains a quick guide/cookbook for creating websites with quarto.
 
-## Authoring a website
+## Preview
 
-Once you have created your various quarto files you can create your website's html files with the following command in bash.
+As you are working on the site you can preview it.
+This will open up the website on a browser.
 
 ```{bash, eval=FALSE}
 quarto preview
@@ -26,6 +27,24 @@ However, this seems to be a bit consistent, to force the preview to update go to
 You can do this even if their are no changes to the `_quarto.yml` to save.
 
 You can host your html files through various means. I use the free service [GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+
+## Authoring a website
+
+Previewing the site (above) is quick as it only rebuilds pages that have been edited.
+However, this may cause some pages to not have the correct options in the navbar.
+
+To fully recreate the website you can render it:
+
+```{bash, eval=FALSE}
+quarto preview
+```
+
+::: {.callout-note}
+Ensue you are in the main directory of your quarto project when running the above.
+:::
+
+This command can take quite a while as it remakes all the pages of the website.
+However, it is very good to one when you have made the final version of the site or a major change.
 
 ## Creating quarto files
 
