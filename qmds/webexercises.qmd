@@ -11,9 +11,9 @@ This page includes:
 
 There are other widgets that I don't find use for in the [webexercises website](https://psyteachr.github.io/webexercises/articles/webexercises.html).
 
-# MCQs
+## MCQs
 
-## Example
+### Example
 
 MCQ:
 
@@ -31,7 +31,7 @@ opts_p <- c("**A1**", "**A2**", answer="**A3**")
 1. Question? `r longmcq(opts_p)`
 ````
 
-## template
+### template
 
 ````{verbatim}
 ```{r, echo = FALSE}
