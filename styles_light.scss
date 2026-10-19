@@ -4,10 +4,8 @@
 /*-- scss:defaults --*/
 
 // Import fonts
-// Lexend
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-// Fira mono
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lexend:wght@100..900&display=swap');
+// Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lexend:wght@100..900&display=swap');
 
 // Colors
 $ibm-blue: #648fff;
@@ -35,6 +33,9 @@ $sidebar-fg: $black; //Text colour
 // Colour of links
 $link-color: $ibm-blue;
 
+$font-family-sans-serif: "Lexend";
+$font-family-monospace: "Fira code";
+
 
 //CSS code
 /*-- scss:rules --*/
@@ -52,8 +53,17 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-family: "Lexend";
 }
-monofont {
-  font-family: "Fira+Mono";
+code {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal; 
+}
+.fira-code-medium {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 // Tippy tooltips

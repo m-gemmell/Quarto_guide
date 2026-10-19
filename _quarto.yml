@@ -144,6 +144,8 @@ format:
       light: [styles_light.scss]
 ####Any text not determined in scss files will be mainfont
     mainfont: Lexend
+####Ensure monofont set to fira Code
+    monofont: Fira Code
 
 ###Paths for webexercises files
     css: include/webex.css
