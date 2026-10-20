@@ -43,8 +43,8 @@ format:
       light: [styles_light.scss]
 ####Any text not determined in scss files will be mainfont
     mainfont: Lexend
-####Ensure monofont set to fira Code
-    monofont: Fira Code
+####Ensure monofont set to fira Mono
+    monofont: Fira Mono
 
 ###Paths for webexercises files
     css: include/webex.css
@@ -52,12 +52,12 @@ format:
 ```
 
 
-
-
-
-
-Highlight
+## Highlight
 
 Accessible code highlighting via [a11y project](https://www.a11yproject.com/).
 
 How to incorporate in quarto via [A Quarto tip a day](https://mine-cetinkaya-rundel.github.io/quarto-tip-a-day/posts/29-a11y-theme/)
+
+## Mono font
+
+Don't use Fira Code, it merges the < and - in the R assignment operator (`<-`).

@@ -4,7 +4,8 @@
 /*-- scss:defaults --*/
 
 // Import fonts
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lexend:wght@100..900&display=swap');
+// Don't use Fira Code, it merges the < and - in the R assignment operator (<-)
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lexend:wght@100..900&display=swap');
 
 // Colors
 $ibm-blue: #648fff;
@@ -31,7 +32,7 @@ $sidebar-fg: $white; // Text colour
 $link-color: $ibm-blue;
 
 $font-family-sans-serif: "Lexend";
-$font-family-monospace: "Fira Code";
+$font-family-monospace: "Fira Mono";
 
 //CSS code
 /*-- scss:rules --*/
@@ -50,15 +51,14 @@ h2, h3, h4, h5, h6 {
   font-family: "Lexend";
 }
 code {
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal; 
 }
 
-.fira-code-medium {
-  font-family: "Fira Code", monospace;
-  font-optical-sizing: auto;
+.fira-mono-medium {
+  font-family: "Fira Mono", monospace;
   font-weight: 500;
   font-style: normal;
 }
